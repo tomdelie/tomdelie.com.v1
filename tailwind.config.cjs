@@ -14,7 +14,8 @@ const config = {
 				'cyber-600': '#9F1CCF',
 				'cyber-700': '#8C1DD6',
 				'cyber-800': '#791DDD',
-				'cyber-900': '#661EE4'
+				'cyber-900': '#661EE4',
+				'graypurple-900': '#231E48'
 			}
 		},
 	},

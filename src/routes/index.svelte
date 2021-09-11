@@ -1,15 +1,8 @@
 <script lang="ts">
 	import WaveSeparator from '../components/WaveSeparator.svelte';
 	import Skill from '../components/Skill.svelte';
-	
 </script>
 
-<header>
-	<div id="logo" class="flex items-center p-2 fixed z-50">
-		<div class="rounded-full" />
-		<span class="ml-2 font-semibold">Tom Délié</span>
-	</div>
-</header>
 <main>
 	<section class="h-screen w-full">
 		<div id="cover-page" class="h-screen relative overflow-hidden">
@@ -176,66 +169,94 @@
 			<div class="h-full w-full flex flex-col items-center justify-center">
 				<h1 class="z-10 main-title font-streamster">Tom Délié</h1>
 				<span
-					class="z-10 main-subtitle text-lg uppercase font-semibold text-black text-sm bg-white -m-2 px-2"
+					class="z-10 main-subtitle text-lg uppercase font-kiona font-bold text-black text-sm bg-white -m-2 px-3"
 					>Full Stack Web Developer</span
 				>
 			</div>
 		</div>
 	</section>
 	<WaveSeparator top="#240145" bottom="#231E48" />
-	<section id="section-2">
-		<div class="container mx-auto px-2 lg:px-0">
+	<section id="section-2" class="relative overflow-hidden">	
+		<div class="container mx-auto px-2 lg:px-0 flex flex-col md:flex-row items-start">
 
-			<h2 class="text-lg text-white font-semibold">About me</h2>
+			<div class="separator flex md:flex-col items-center">
+				<h2 class="title bg-graypurple-900 font-semibold text-cyber-100 font-kiona px-3 py-1.5 md:px-3 md:py-6 border border-cyber-100 md:transform md:-rotate-180">ABOUT ME</h2>
+				<svg class="ml-2 md:mt-2 md:ml-0 transform -rotate-90 md:transform md:rotate-0" width="8" height="8" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 3L3.73205 0H0.267949L2 3Z" fill="#FD19AD"/>
+				</svg>
+				<div class="line ml-1 md:ml-0 md:mt-1 w-72 md:h-72 h-px md:w-px"></div>
+			</div>
+			<div class="ml-0 mt-6 md:mt-0 md:ml-6">
+				<p class="text-white">
+					Hey, I'm Tom Délié a 23 years old french full-stack
+					developer that recently graduated in software engineering (July 2021). I worked as an
+					internship student during 3 years, mainly as a Node.js back-end developer. I'm currently
+					working as a freelance developer.
+				</p>
 
-			<p class="text-white mt-6">
-				Hey, I'm Tom Délié a 23 years old french full-stack
-				developer that recently graduated in software engineering (July 2021). I worked as an
-				internship student during 3 years, mainly as a Node.js back-end developer. I'm currently
-				working as a freelance developer.
-			</p>
+				<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+					<div>
+						<h3 class="text-xs text-white font-semibold mb-2">JavaScript</h3>
+						<Skill moreClass="border-b" src="/images/icons/javascript/javascript.svg" name="JavaScript" level="{3}" />
+						<Skill moreClass="border-b" src="/images/icons/javascript/typescript.svg" name="TypeScript" level="{3}" />
+						<Skill moreClass="border-b" src="/images/icons/javascript/vuejs.svg" name="Vue.js" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/javascript/express.svg" name="Express" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/javascript/hapi.png" name="hapi" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/javascript/svelte.svg" name="Svelte" level="{1}" />
+						<Skill src="/images/icons/javascript/react.svg" name="React" level="{1}" />
+					</div>
 
-			<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-				<div>
-					<h3 class="text-xs text-white font-semibold mb-2">JavaScript</h3>
-					<Skill moreClass="border-b" src="/images/icons/javascript/javascript.svg" name="JavaScript" level="{3}" />
-					<Skill moreClass="border-b" src="/images/icons/javascript/typescript.svg" name="TypeScript" level="{3}" />
-					<Skill moreClass="border-b" src="/images/icons/javascript/vuejs.svg" name="Vue.js" level="{2}" />
-					<Skill moreClass="border-b" src="/images/icons/javascript/express.svg" name="Express" level="{2}" />
-					<Skill moreClass="border-b" src="/images/icons/javascript/hapi.png" name="hapi" level="{2}" />
-					<Skill moreClass="border-b" src="/images/icons/javascript/svelte.svg" name="Svelte" level="{1}" />
-					<Skill src="/images/icons/javascript/react.svg" name="React" level="{1}" />
-				</div>
+					<div>
+						<h3 class="text-xs text-white font-semibold mb-2">PHP</h3>
+						<Skill moreClass="border-b" src="/images/icons/php/php.svg" name="PHP 7" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/php/laravel.svg" name="Laravel" level="{2}" />
+						<Skill src="/images/icons/php/symfony.svg" name="Symfony" level="{2}" />
+					</div>
 
-				<div>
-					<h3 class="text-xs text-white font-semibold mb-2">PHP</h3>
-					<Skill moreClass="border-b" src="/images/icons/php/php.svg" name="PHP 7" level="{2}" />
-					<Skill moreClass="border-b" src="/images/icons/php/laravel.svg" name="Laravel" level="{2}" />
-					<Skill src="/images/icons/php/symfony.svg" name="Symfony" level="{2}" />
-				</div>
+					<div>
+						<h3 class="text-xs text-white font-semibold mb-2">Automation</h3>
+						<Skill moreClass="border-b" src="/images/icons/automation/docker.svg" name="Docker" level="{3}" />
+						<Skill moreClass="border-b" src="/images/icons/automation/github.svg" name="GitHub Actions" level="{3}" />
+						<Skill moreClass="border-b" src="/images/icons/automation/terraform.svg" name="Terraform" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/automation/ansible.svg" name="Ansible" level="{2}" />
+						<Skill src="/images/icons/automation/gitlab.svg" name="GitLab CI" level="{1}" />
+					</div>
 
-				<div>
-					<h3 class="text-xs text-white font-semibold mb-2">Automation</h3>
-					<Skill moreClass="border-b" src="/images/icons/automation/docker.svg" name="Docker" level="{3}" />
-					<Skill moreClass="border-b" src="/images/icons/automation/github.svg" name="GitHub Actions" level="{3}" />
-					<Skill moreClass="border-b" src="/images/icons/automation/terraform.svg" name="Terraform" level="{2}" />
-					<Skill moreClass="border-b" src="/images/icons/automation/ansible.svg" name="Ansible" level="{2}" />
-					<Skill src="/images/icons/automation/gitlab.svg" name="GitLab CI" level="{1}" />
-				</div>
-
-				<div>
-					<h3 class="text-xs text-white font-semibold mb-2">Others</h3>
-					<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level="{3}" />
-					<Skill moreClass="border-b" src="/images/icons/automation/ansible.svg" name="Ansible" level="{2}" />
-					<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level="{2}" />
-					<Skill src="/images/icons/go.svg" name="Go" level="{1}" />
+					<div>
+						<h3 class="text-xs text-white font-semibold mb-2">Others</h3>
+						<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level="{3}" />
+						<Skill moreClass="border-b" src="/images/icons/automation/ansible.svg" name="Ansible" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level="{2}" />
+						<Skill src="/images/icons/go.svg" name="Go" level="{1}" />
+					</div>
 				</div>
 			</div>
 
 		</div>
 	</section>
 
-	<h1 class="text-lg text-white">Color palette</h1>
+	<section id="section-3" class="mt-20">
+		<div class="container mx-auto px-2 lg:px-0 flex flex-col md:flex-row items-start">
+			<div class="separator flex md:flex-col items-center">
+				<h2 class="title bg-graypurple-900 font-semibold text-cyber-100 font-kiona px-3 py-1.5 md:px-3 md:py-6 border border-cyber-100 md:transform md:-rotate-180">PROJECTS</h2>
+				<svg class="ml-2 md:mt-2 md:ml-0 transform -rotate-90 md:transform md:rotate-0" width="8" height="8" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 3L3.73205 0H0.267949L2 3Z" fill="#FD19AD"/>
+				</svg>
+				<div class="line ml-1 md:ml-0 md:mt-1 w-72 md:h-72 h-px md:w-px"></div>
+			</div>
+			<div class="ml-0 mt-6 md:mt-0 md:ml-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 1" />
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 2" />
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 3" />
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 4" />
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 5" />
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 6" />
+				<img class="shadow-lg" src="/images/mockup.png" alt="Project 7" />
+			</div>
+		</div>
+	</section>
+
+	<h1 class="text-lg text-white mt-32">Color palette</h1>
 	<div class="flex flex-wrap items-center">
 		<div
 			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-900"
@@ -295,10 +316,22 @@
 </main>
 
 <style lang="css">
+	.separator > .title {
+		text-shadow: #EA1AB4 0px 0px 10px;
+	}
+	
+	.separator > .line {
+		background: linear-gradient(90deg, rgba(234, 26, 180, 0.8) 0%, rgba(234, 26, 180, 0.2) 80%);
+	}
+
 	.main-title {
 		font-size: 6rem;
 		color: #fbfdf8;
 		text-shadow: white 0px 0px 20px;
+	}
+
+	.font-kiona {
+		font-family: 'Kiona';
 	}
 
 	.font-streamster {
@@ -373,6 +406,14 @@
 	@media (min-width: 768px) {
 		.mountain {
 			bottom: -13rem;
+		}
+
+		.separator > .line {
+			background: linear-gradient(180deg, rgba(234, 26, 180, 0.8) 0%, rgba(234, 26, 180, 0.2) 80%);
+		}
+
+		.separator > .title {
+			writing-mode: vertical-rl;
 		}
 	}
 

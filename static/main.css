@@ -17,6 +17,11 @@ html, body {
 }
 
 @font-face {
+  font-family: "Kiona";
+  src: url("/Kiona-Itallic.woff");
+}
+
+@font-face {
   font-family: "Streamster";
   src: url("/Streamster.ttf");
 }
