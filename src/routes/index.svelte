@@ -1,6 +1,7 @@
 <script lang="ts">
 	import WaveSeparator from '../components/WaveSeparator.svelte';
 	import Skill from '../components/Skill.svelte';
+	import Project from '../components/Project.svelte';
 </script>
 
 <main>
@@ -176,139 +177,202 @@
 		</div>
 	</section>
 	<WaveSeparator top="#240145" bottom="#231E48" />
-	<section id="section-2" class="relative overflow-hidden">	
+	<section id="section-2" class="mt-10 relative overflow-hidden">
 		<div class="container mx-auto px-2 lg:px-0 flex flex-col md:flex-row items-start">
-
 			<div class="separator flex md:flex-col items-center">
-				<h2 class="title bg-graypurple-900 font-semibold text-cyber-100 font-kiona px-3 py-1.5 md:px-3 md:py-6 border border-cyber-100 md:transform md:-rotate-180">ABOUT ME</h2>
-				<svg class="ml-2 md:mt-2 md:ml-0 transform -rotate-90 md:transform md:rotate-0" width="8" height="8" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M2 3L3.73205 0H0.267949L2 3Z" fill="#FD19AD"/>
+				<h2
+					class="title bg-graypurple-900 font-semibold text-cyber-100 font-kiona px-3 py-1.5 md:px-3 md:py-6 border border-cyber-100 md:transform md:-rotate-180"
+				>
+					ABOUT ME
+				</h2>
+				<svg
+					class="ml-2 md:mt-2 md:ml-0 transform -rotate-90 md:transform md:rotate-0"
+					width="8"
+					height="8"
+					viewBox="0 0 4 4"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path d="M2 3L3.73205 0H0.267949L2 3Z" fill="#FD19AD" />
 				</svg>
-				<div class="line ml-1 md:ml-0 md:mt-1 w-72 md:h-72 h-px md:w-px"></div>
+				<div class="line ml-1 md:ml-0 md:mt-1 w-72 md:h-72 h-px md:w-px" />
 			</div>
 			<div class="ml-0 mt-6 md:mt-0 md:ml-6">
 				<p class="text-white">
-					Hey, I'm Tom Délié a 23 years old french full-stack
-					developer that recently graduated in software engineering (July 2021). I worked as an
-					internship student during 3 years, mainly as a Node.js back-end developer. I'm currently
-					working as a freelance developer.
+					Hey, I'm Tom Délié a 23 years old french full-stack developer that recently graduated in
+					software engineering (July 2021). I worked as an internship student during 3 years, mainly
+					as a Node.js back-end developer. I'm currently working as a freelance developer.
 				</p>
 
 				<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 					<div>
 						<h3 class="text-xs text-white font-semibold mb-2">JavaScript</h3>
-						<Skill moreClass="border-b" src="/images/icons/javascript/javascript.svg" name="JavaScript" level="{3}" />
-						<Skill moreClass="border-b" src="/images/icons/javascript/typescript.svg" name="TypeScript" level="{3}" />
-						<Skill moreClass="border-b" src="/images/icons/javascript/vuejs.svg" name="Vue.js" level="{2}" />
-						<Skill moreClass="border-b" src="/images/icons/javascript/express.svg" name="Express" level="{2}" />
-						<Skill moreClass="border-b" src="/images/icons/javascript/hapi.png" name="hapi" level="{2}" />
-						<Skill moreClass="border-b" src="/images/icons/javascript/svelte.svg" name="Svelte" level="{1}" />
-						<Skill src="/images/icons/javascript/react.svg" name="React" level="{1}" />
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/javascript/javascript.svg"
+							name="JavaScript"
+							level={3}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/javascript/typescript.svg"
+							name="TypeScript"
+							level={3}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/javascript/vuejs.svg"
+							name="Vue.js"
+							level={2}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/javascript/express.svg"
+							name="Express"
+							level={2}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/javascript/hapi.png"
+							name="hapi"
+							level={2}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/javascript/svelte.svg"
+							name="Svelte"
+							level={1}
+						/>
+						<Skill src="/images/icons/javascript/react.svg" name="React" level={1} />
 					</div>
 
 					<div>
 						<h3 class="text-xs text-white font-semibold mb-2">PHP</h3>
-						<Skill moreClass="border-b" src="/images/icons/php/php.svg" name="PHP 7" level="{2}" />
-						<Skill moreClass="border-b" src="/images/icons/php/laravel.svg" name="Laravel" level="{2}" />
-						<Skill src="/images/icons/php/symfony.svg" name="Symfony" level="{2}" />
+						<Skill moreClass="border-b" src="/images/icons/php/php.svg" name="PHP 7" level={2} />
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/php/laravel.svg"
+							name="Laravel"
+							level={2}
+						/>
+						<Skill src="/images/icons/php/symfony.svg" name="Symfony" level={2} />
 					</div>
 
 					<div>
 						<h3 class="text-xs text-white font-semibold mb-2">Automation</h3>
-						<Skill moreClass="border-b" src="/images/icons/automation/docker.svg" name="Docker" level="{3}" />
-						<Skill moreClass="border-b" src="/images/icons/automation/github.svg" name="GitHub Actions" level="{3}" />
-						<Skill moreClass="border-b" src="/images/icons/automation/terraform.svg" name="Terraform" level="{2}" />
-						<Skill moreClass="border-b" src="/images/icons/automation/ansible.svg" name="Ansible" level="{2}" />
-						<Skill src="/images/icons/automation/gitlab.svg" name="GitLab CI" level="{1}" />
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/automation/docker.svg"
+							name="Docker"
+							level={3}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/automation/github.svg"
+							name="GitHub Actions"
+							level={3}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/automation/terraform.svg"
+							name="Terraform"
+							level={2}
+						/>
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/automation/ansible.svg"
+							name="Ansible"
+							level={2}
+						/>
+						<Skill src="/images/icons/automation/gitlab.svg" name="GitLab CI" level={1} />
 					</div>
 
 					<div>
 						<h3 class="text-xs text-white font-semibold mb-2">Others</h3>
-						<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level="{3}" />
-						<Skill moreClass="border-b" src="/images/icons/automation/ansible.svg" name="Ansible" level="{2}" />
-						<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level="{2}" />
-						<Skill src="/images/icons/go.svg" name="Go" level="{1}" />
+						<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level={3} />
+						<Skill
+							moreClass="border-b"
+							src="/images/icons/automation/ansible.svg"
+							name="Ansible"
+							level={2}
+						/>
+						<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level={2} />
+						<Skill moreClass="border-b" src="/images/icons/godotengine.svg" name="Godot Engine" level={1} />
+						<Skill src="/images/icons/go.svg" name="Go" level={1} />
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
 	<section id="section-3" class="mt-20">
 		<div class="container mx-auto px-2 lg:px-0 flex flex-col md:flex-row items-start">
 			<div class="separator flex md:flex-col items-center">
-				<h2 class="title bg-graypurple-900 font-semibold text-cyber-100 font-kiona px-3 py-1.5 md:px-3 md:py-6 border border-cyber-100 md:transform md:-rotate-180">PROJECTS</h2>
-				<svg class="ml-2 md:mt-2 md:ml-0 transform -rotate-90 md:transform md:rotate-0" width="8" height="8" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M2 3L3.73205 0H0.267949L2 3Z" fill="#FD19AD"/>
+				<h2
+					class="title bg-graypurple-900 font-semibold text-cyber-100 font-kiona px-3 py-1.5 md:px-3 md:py-6 border border-cyber-100 md:transform md:-rotate-180"
+				>
+					PROJECTS
+				</h2>
+				<svg
+					class="ml-2 md:mt-2 md:ml-0 transform -rotate-90 md:transform md:rotate-0"
+					width="8"
+					height="8"
+					viewBox="0 0 4 4"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path d="M2 3L3.73205 0H0.267949L2 3Z" fill="#FD19AD" />
 				</svg>
-				<div class="line ml-1 md:ml-0 md:mt-1 w-72 md:h-72 h-px md:w-px"></div>
+				<div class="line ml-1 md:ml-0 md:mt-1 w-72 md:h-72 h-px md:w-px" />
 			</div>
-			<div class="ml-0 mt-6 md:mt-0 md:ml-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 1" />
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 2" />
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 3" />
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 4" />
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 5" />
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 6" />
-				<img class="shadow-lg" src="/images/mockup.png" alt="Project 7" />
+			<div class="project-previewml-0 mt-6 md:mt-0 md:ml-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+				<Project name="Symfonax" src="/images/mockup.png" />
+				<Project name="E-Furrax" src="/images/efurrax-5.png" />
+				<Project name="Developer Skill Tree" src="/images/dev-skill-tree.png" />
+				<Project name="Pixel World" src="/images/pixel-world.png" />
 			</div>
 		</div>
 	</section>
+	
+	<footer class="flex items-center justify-center mt-20">
+		<span class="border-t border-cyber-100 text-cyber-100 italic py-2 tracking-widest text-xs">Designed & Built by <span class="font-semibold" style="text-shadow: #ea1ab4 0px 0px 4px;">Tom Délié</span></span>
+	</footer>
 
 	<h1 class="text-lg text-white mt-32">Color palette</h1>
 	<div class="flex flex-wrap items-center">
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-900"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-900">
 			<span>cyber-900</span>
 			#661EE4
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-800"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-800">
 			<span>cyber-800</span>
 			#791DDD
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-700"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-700">
 			<span>cyber-700</span>
 			#8C1DD6
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-600"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-600">
 			<span>cyber-600</span>
 			#9F1CCF
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-500"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-500">
 			<span>cyber-500</span>
 			#B21CC9
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-400"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-400">
 			<span>cyber-400</span>
 			#C41BC2
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-300"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-300">
 			<span>cyber-300</span>
 			#D71ABB
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-200"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-200">
 			<span>cyber-200</span>
 			#EA1AB4
 		</div>
-		<div
-			class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-100"
-		>
+		<div class="m-1 w-24 h-24 flex flex-col items-center justify-center bg-cyber-100">
 			<span>cyber-100</span>
 			#FD19AD
 		</div>
@@ -317,9 +381,9 @@
 
 <style lang="css">
 	.separator > .title {
-		text-shadow: #EA1AB4 0px 0px 10px;
+		text-shadow: #ea1ab4 0px 0px 10px;
 	}
-	
+
 	.separator > .line {
 		background: linear-gradient(90deg, rgba(234, 26, 180, 0.8) 0%, rgba(234, 26, 180, 0.2) 80%);
 	}
@@ -462,6 +526,81 @@
 	@media (min-width: 1460px) {
 		.mountain {
 			bottom: -35rem;
+		}
+	}
+
+	@keyframes glitch-a {
+		10%,
+		30%,
+		50%,
+		70%,
+		90% {
+			--top: 0;
+			--left: 0;
+		}
+		0% {
+			--v-height: 15%;
+		}
+		20% {
+			--left: 0.005;
+		}
+		40% {
+			--left: 0.01;
+			--v-height: 20%;
+			--top: 3;
+		}
+		60% {
+			--left: 0.03;
+			--v-height: 25%;
+			--top: 6;
+		}
+		80% {
+			--left: 0.07;
+			--v-height: 5%;
+			--top: 8;
+		}
+		100% {
+			--left: 0.083;
+			--v-height: 30%;
+			--top: 1;
+		}
+	}
+
+	@keyframes glitch-b {
+		10%,
+		30%,
+		50%,
+		70%,
+		90% {
+			--top: 0;
+			--left: 0;
+		}
+		0% {
+			--v-height: 15%;
+			--top: 10;
+		}
+		20% {
+			--left: -0.005;
+		}
+		40% {
+			--left: -0.01;
+			--v-height: 17%;
+			--top: 3;
+		}
+		60% {
+			--left: -0.03;
+			--v-height: 35%;
+			--top: 6;
+		}
+		80% {
+			--left: -0.07;
+			--v-height: 5%;
+			--top: 8;
+		}
+		100% {
+			--left: -0.083;
+			--v-height: 30%;
+			--top: 1;
 		}
 	}
 </style>

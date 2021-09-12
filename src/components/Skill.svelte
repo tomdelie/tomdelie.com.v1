@@ -11,8 +11,8 @@
     <span class="text-white ml-2 text-sm">{name}</span>
   </div>
   <div class="h-1 flex items-center ml-4">
-    <div class="{level >= 1 ? 'bg-cyber-300' : 'border border-cyber-300'} w-6 h-full rounded-full"></div>
-    <div class="{level >= 2 ? 'bg-cyber-300' : 'border border-cyber-300'} w-6 h-full rounded-full ml-1"></div>
-    <div class="{level >= 3 ? 'bg-cyber-300' : 'border border-cyber-300'} w-6 h-full rounded-full ml-1"></div>
+    <div class="{level >= 1 ? 'bg-yellow-500' : 'border border-cyber-300'} w-6 h-full rounded-full cursor-help" title="Beginner"></div>
+    <div class="{level >= 2 ? 'bg-yellow-500' : 'border border-cyber-300'} w-6 h-full rounded-full ml-1 cursor-help" title="Intermediate"></div>
+    <div class="{level >= 3 ? 'bg-yellow-500' : 'border border-cyber-300'} w-6 h-full rounded-full ml-1 cursor-help" title="Advanced"></div>
   </div>
 </div>
