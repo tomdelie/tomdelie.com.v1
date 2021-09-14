@@ -178,13 +178,13 @@
 		</div>
 	</section>
 	<WaveSeparator top="#240145" bottom="#231E48" />
-	<section class="container lg:w-2/3 mx-auto px-4 lg:px-0 mt-20 relative overflow-hidden">
+	<section class="container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 relative overflow-hidden">
 		<h2>
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">01.</span><span
-				class="font-kiona font-semibold text-white opacity-90">About me</span
+				class="font-kiona font-semibold text-white text-opacity-90">About me</span
 			>
 		</h2>
-		<p class="text-white opacity-80 my-6">
+		<p class="text-white text-opacity-80 my-6">
 			Hey, I'm Tom Délié a 23 years old french full-stack developer that recently graduated in
 			software engineering (July 2021). I worked as an internship student during 3 years, mainly as
 			a Node.js back-end developer. I'm currently working as a freelance developer.
@@ -192,7 +192,7 @@
 
 		<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 			<div>
-				<h3 class="text-xs text-white opacity-80 font-semibold mb-2">JavaScript</h3>
+				<h3 class="text-xs text-white text-opacity-80 font-semibold mb-2">JavaScript</h3>
 				<Skill
 					moreClass="border-b"
 					src="/images/icons/javascript/javascript.svg"
@@ -228,14 +228,14 @@
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold opacity-80 mb-2">PHP</h3>
+				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">PHP</h3>
 				<Skill moreClass="border-b" src="/images/icons/php/php.svg" name="PHP 7" level={2} />
 				<Skill moreClass="border-b" src="/images/icons/php/laravel.svg" name="Laravel" level={2} />
 				<Skill src="/images/icons/php/symfony.svg" name="Symfony" level={2} />
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold opacity-80 mb-2">Automation</h3>
+				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">Automation</h3>
 				<Skill
 					moreClass="border-b"
 					src="/images/icons/automation/docker.svg"
@@ -264,7 +264,7 @@
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold mb-2 opacity-80">Others</h3>
+				<h3 class="text-xs text-white font-semibold mb-2 text-opacity-80">Others</h3>
 				<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level={3} />
 				<Skill
 					moreClass="border-b"
@@ -277,25 +277,24 @@
 					moreClass="border-b"
 					src="/images/icons/godotengine.svg"
 					name="Godot Engine"
-					level={1}
+					level={2}
 				/>
 				<Skill src="/images/icons/go.svg" name="Go" level={1} />
 			</div>
 		</div>
 	</section>
 
-	<section class="container mx-auto px-4 lg:px-0 lg:w-2/3 mt-40">
+	<section class="container mx-auto px-4 lg:px-0 lg:w-3/5 mt-40">
 		<h2>
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">02.</span><span
-				class="font-kiona font-semibold text-white opacity-90">Projects</span
+				class="font-kiona font-semibold text-white text-opacity-90">Projects</span
 			>
 		</h2>
-		<div class="project-preview mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-			<Project name="Symfonax" src="/images/mockup.png" />
-			<Project name="E-Furrax" src="/images/efurrax-5.png" />
-			<Project name="Developer Skill Tree" src="/images/dev-skill-tree.png" />
-			<Project name="Pixel World" src="/images/pixel-world.png" />
-		</div>
+
+		<div class="mt-6"><Project name="Symfonax" src="/images/mockup.png" /></div>
+		<div class="mt-6"><Project name="E-Furrax" src="/images/efurrax-5.png" /></div>
+		<div class="mt-6"><Project name="Developer Skill Tree" src="/images/dev-skill-tree.png" /></div>
+		<div class="mt-6"><Project name="Pixel World" src="/images/pixel-world.png" /></div>
 	</section>
 
 	<section class="mt-40">
@@ -306,7 +305,9 @@
 						class="font-kiona font-semibold text-white opacity-90">Contact</span
 					>
 				</h2>
-				<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">Drop a line</h3>
+				<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
+					Drop a line
+				</h3>
 				<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
 					Want to know more? Have a talk about your project? Drop me a line and let's talk about it.
 				</p>
