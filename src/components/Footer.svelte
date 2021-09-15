@@ -1,4 +1,4 @@
-<footer class="flex flex-col items-center justify-center my-32 pb-6 relative">
+<footer class="flex flex-col items-center justify-center mt-20 pb-6 pt-20 relative">
 	<span class="text-white opacity-90 italic pt-4 tracking-widest text-xs mb-2"
 		>Designed & Built by <span class="font-semibold">Tom Délié</span></span
 	>
@@ -43,7 +43,7 @@
 			>
 		</a>
 	</div>
-	<svg class="absolute bottom-0 w-full transform rotate-180" style="z-index: -1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1685.86 387.16">
+	<svg style="z-index: -1" class="absolute bottom-0 w-full transform rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1685.86 387.16">
 		<polygon points="1683.97 0.5 1005.34 386.66 645.6 386.66 1.81 0.5 1683.97 0.5" fill="none" stroke="#513068"></polygon>
 		<path d="M282.17.5,705.55,386.66" fill="none" stroke="#513068"></path>
 		<path d="M562.53.5l203,386.16" fill="none" stroke="#513068"></path>
@@ -58,7 +58,11 @@
 </footer>
 
 <style lang="css" scoped>
-  svg:hover {
+	footer {
+		background: linear-gradient(180deg, rgba(253, 25, 173, 0) 0%, rgba(253, 25, 173, 0.1) 100%);
+	}
+
+  footer a > svg:hover {
     filter: drop-shadow(0px 0px 4px #ea1ab4);
 		color: #F8D8F1;
   }

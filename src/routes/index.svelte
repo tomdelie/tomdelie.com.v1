@@ -6,78 +6,38 @@
 </script>
 
 <main>
-	<svg
-		class="hidden hair z-10 opacity-70 w-full absolute left-0"
-		width="1440"
-		height="3012"
-		viewBox="0 0 1440 3012"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class="hidden hair z-10 w-full absolute left-0 opacity-70" width="1440" height="2996" viewBox="0 0 1440 2996" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_d)">
-			<path
-				d="M362.5 0.5C362.5 460 533.5 656.5 707 752.5C880.5 848.5 1382.5 709 1450 1156.5C1517.5 1604 1260 1792 823.5 1897.5C387 2003 -69.5 2228.5 -210.5 2519.5C-351.5 2810.5 -508.5 2881 -912 2969"
-				stroke="white"
-				stroke-linecap="round"
-			/>
+		<path d="M362.5 0.5C362.5 460 533.5 656.5 707 752.5C880.5 848.5 1382.5 709 1450 1156.5C1517.5 1604 1260 1792 823.5 1897.5C387 2003 -69.5 2228.5 -210.5 2519.5C-351.5 2810.5 -508.5 2881 -912 2969" stroke="white" stroke-width="2" stroke-linecap="round"/>
 		</g>
 		<g filter="url(#filter1_d)">
-			<path
-				d="M412 0C341.5 785 571 752 756.5 752C942 752 1407 691 1474.5 1138.5C1542 1586 1021 1786.8 563.5 1930.5C106 2074.2 -76 2276.5 -138 2484C-200 2691.5 -323 2872 -852.5 2991"
-				stroke="white"
-				stroke-linecap="round"
-			/>
+		<path d="M412 0C341.5 785 571 752 756.5 752C942 752 1407 691 1474.5 1138.5C1542 1586 1021 1786.8 563.5 1930.5C106 2074.2 -76 2276.5 -138 2484C-200 2691.5 -323 2872 -852.5 2991" stroke="white" stroke-width="3" stroke-linecap="round"/>
 		</g>
 		<defs>
-			<filter
-				id="filter0_d"
-				x="-914.5"
-				y="-2"
-				width="2377.68"
-				height="2973.5"
-				filterUnits="userSpaceOnUse"
-				color-interpolation-filters="sRGB"
-			>
-				<feFlood flood-opacity="0" result="BackgroundImageFix" />
-				<feColorMatrix
-					in="SourceAlpha"
-					type="matrix"
-					values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-					result="hardAlpha"
-				/>
-				<feOffset />
-				<feGaussianBlur stdDeviation="1" />
-				<feComposite in2="hardAlpha" operator="out" />
-				<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
-				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-			</filter>
-			<filter
-				id="filter1_d"
-				x="-855"
-				y="-2.50006"
-				width="2337.94"
-				height="2996"
-				filterUnits="userSpaceOnUse"
-				color-interpolation-filters="sRGB"
-			>
-				<feFlood flood-opacity="0" result="BackgroundImageFix" />
-				<feColorMatrix
-					in="SourceAlpha"
-					type="matrix"
-					values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-					result="hardAlpha"
-				/>
-				<feOffset />
-				<feGaussianBlur stdDeviation="1" />
-				<feComposite in2="hardAlpha" operator="out" />
-				<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
-				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-			</filter>
+		<filter id="filter0_d" x="-917" y="-4.5" width="2382.68" height="2978.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+		<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+		<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+		<feOffset/>
+		<feGaussianBlur stdDeviation="2"/>
+		<feComposite in2="hardAlpha" operator="out"/>
+		<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.75 0"/>
+		<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+		<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+		</filter>
+		<filter id="filter1_d" x="-857.5" y="-5.00006" width="2342.94" height="3001" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+		<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+		<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+		<feOffset/>
+		<feGaussianBlur stdDeviation="2"/>
+		<feComposite in2="hardAlpha" operator="out"/>
+		<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.75 0"/>
+		<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+		<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+		</filter>
 		</defs>
 	</svg>
-
+		
+				
 	<section class="h-screen w-full">
 		<div id="cover-page" class="h-screen relative overflow-hidden">
 			<svg
@@ -244,7 +204,7 @@
 				<h1 class="z-30 main-title font-streamster">Tom Délié</h1>
 				<span
 					class="z-30 main-subtitle text-lg uppercase font-kiona font-bold text-black text-sm bg-white -m-2 px-3"
-					>Full Stack Web Developer</span
+					>Full Stack JavaScript Developer</span
 				>
 			</div>
 		</div>
@@ -298,12 +258,21 @@
 					src="/images/icons/javascript/typescript.svg"
 					name="TypeScript"
 					level={3}
+					favorite={true}
+				/>
+				<Skill
+					moreClass="border-b"
+					src="/images/icons/javascript/nodedotjs.svg"
+					name="Node.js"
+					level={2}
+					favorite={true}
 				/>
 				<Skill
 					moreClass="border-b"
 					src="/images/icons/javascript/vuejs.svg"
 					name="Vue.js"
 					level={2}
+					favorite={true}
 				/>
 				<Skill
 					moreClass="border-b"
@@ -317,6 +286,7 @@
 					src="/images/icons/javascript/svelte.svg"
 					name="Svelte"
 					level={1}
+					favorite={true}
 				/>
 				<Skill src="/images/icons/javascript/react.svg" name="React" level={1} />
 			</div>
@@ -372,7 +342,7 @@
 		</div>
 	</section>
 
-	<section class="container mx-auto px-4 lg:px-0 mt-28">
+	<section class="container mx-auto px-4 lg:px-0 mt-40">
 		<div class="flex flex-col items-center justify-center">
 			<h2>
 				<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">04.</span><span
@@ -386,7 +356,7 @@
 				Want to know more? Have a talk about your project? Drop me a line and let's talk about it.
 			</p>
 			<button
-				class="mt-6 text-sm border border-cyber-100 rounded-sm px-6 py-3 bg-graypurple-900 text-cyber-100 transition duration-200 font-bold hover:bg-cyber-100 hover:bg-opacity-10"
+				class="contact-button overflow-hidden z-10 hover:shadow-lg relative mt-6 text-sm rounded px-6 py-3 text-white font-bold transition duration-200"
 				>CONTACT ME</button
 			>
 		</div>
@@ -395,6 +365,24 @@
 <Footer />
 
 <style lang="css">
+	.contact-button::before {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 200%;
+		height: 400%;
+		background: linear-gradient(-130deg, #e4a11e 30%, #ea1ab4 60%);
+		transition: all 0.5s;
+		transform: translate(-50%, -50%);
+	}
+
+	.contact-button:hover::before {
+		transition: all 0.5s;
+		transform: translate(-50%, -50%) rotate(-180deg);
+	}
+
 	.shadow-pink {
 		text-shadow: #ea1ab4 0px 0px 6px;
 	}
