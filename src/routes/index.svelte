@@ -6,6 +6,78 @@
 </script>
 
 <main>
+	<svg
+		class="hidden hair z-10 opacity-70 w-full absolute left-0"
+		width="1440"
+		height="3012"
+		viewBox="0 0 1440 3012"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<g filter="url(#filter0_d)">
+			<path
+				d="M362.5 0.5C362.5 460 533.5 656.5 707 752.5C880.5 848.5 1382.5 709 1450 1156.5C1517.5 1604 1260 1792 823.5 1897.5C387 2003 -69.5 2228.5 -210.5 2519.5C-351.5 2810.5 -508.5 2881 -912 2969"
+				stroke="white"
+				stroke-linecap="round"
+			/>
+		</g>
+		<g filter="url(#filter1_d)">
+			<path
+				d="M412 0C341.5 785 571 752 756.5 752C942 752 1407 691 1474.5 1138.5C1542 1586 1021 1786.8 563.5 1930.5C106 2074.2 -76 2276.5 -138 2484C-200 2691.5 -323 2872 -852.5 2991"
+				stroke="white"
+				stroke-linecap="round"
+			/>
+		</g>
+		<defs>
+			<filter
+				id="filter0_d"
+				x="-914.5"
+				y="-2"
+				width="2377.68"
+				height="2973.5"
+				filterUnits="userSpaceOnUse"
+				color-interpolation-filters="sRGB"
+			>
+				<feFlood flood-opacity="0" result="BackgroundImageFix" />
+				<feColorMatrix
+					in="SourceAlpha"
+					type="matrix"
+					values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+					result="hardAlpha"
+				/>
+				<feOffset />
+				<feGaussianBlur stdDeviation="1" />
+				<feComposite in2="hardAlpha" operator="out" />
+				<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+			</filter>
+			<filter
+				id="filter1_d"
+				x="-855"
+				y="-2.50006"
+				width="2337.94"
+				height="2996"
+				filterUnits="userSpaceOnUse"
+				color-interpolation-filters="sRGB"
+			>
+				<feFlood flood-opacity="0" result="BackgroundImageFix" />
+				<feColorMatrix
+					in="SourceAlpha"
+					type="matrix"
+					values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+					result="hardAlpha"
+				/>
+				<feOffset />
+				<feGaussianBlur stdDeviation="1" />
+				<feComposite in2="hardAlpha" operator="out" />
+				<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
+				<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+				<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+			</filter>
+		</defs>
+	</svg>
+
 	<section class="h-screen w-full">
 		<div id="cover-page" class="h-screen relative overflow-hidden">
 			<svg
@@ -177,8 +249,8 @@
 			</div>
 		</div>
 	</section>
-	<WaveSeparator top="#240145" bottom="#231E48" />
-	<section class="container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 relative overflow-hidden">
+	<WaveSeparator top="#240145" bottom="rgba(0, 0, 0, 0)" />
+	<section class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-56 relative">
 		<h2>
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">01.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">About me</span
@@ -189,6 +261,28 @@
 			software engineering (July 2021). I worked as an internship student during 3 years, mainly as
 			a Node.js back-end developer. I'm currently working as a freelance developer.
 		</p>
+	</section>
+
+	<section class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 mt-28">
+		<h2 class="mb-6">
+			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">02.</span><span
+				class="font-kiona font-semibold text-white text-opacity-90">Projects</span
+			>
+		</h2>
+		<div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+			<Project name="Symfonax" src="/images/mockup.png" />
+			<Project name="E-Furrax" src="/images/efurrax-5.png" />
+			<Project name="Developer Skill Tree" src="/images/dev-skill-tree.png" />
+			<Project name="Pixel World" src="/images/pixel-world.png" />
+		</div>
+	</section>
+
+	<section class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-28 relative">
+		<h2 class="mb-6">
+			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">03.</span><span
+				class="font-kiona font-semibold text-white text-opacity-90">Skills</span
+			>
+		</h2>
 
 		<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 			<div>
@@ -244,7 +338,7 @@
 				/>
 				<Skill
 					moreClass="border-b"
-					src="/images/icons/automation/github.svg"
+					src="/images/icons/automation/githubactions.svg"
 					name="GitHub Actions"
 					level={3}
 				/>
@@ -266,12 +360,6 @@
 			<div>
 				<h3 class="text-xs text-white font-semibold mb-2 text-opacity-80">Others</h3>
 				<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level={3} />
-				<Skill
-					moreClass="border-b"
-					src="/images/icons/automation/ansible.svg"
-					name="Ansible"
-					level={2}
-				/>
 				<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level={2} />
 				<Skill
 					moreClass="border-b"
@@ -284,38 +372,23 @@
 		</div>
 	</section>
 
-	<section class="container mx-auto px-4 lg:px-0 lg:w-3/5 mt-40">
-		<h2>
-			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">02.</span><span
-				class="font-kiona font-semibold text-white text-opacity-90">Projects</span
-			>
-		</h2>
-
-		<div class="mt-6"><Project name="Symfonax" src="/images/mockup.png" /></div>
-		<div class="mt-6"><Project name="E-Furrax" src="/images/efurrax-5.png" /></div>
-		<div class="mt-6"><Project name="Developer Skill Tree" src="/images/dev-skill-tree.png" /></div>
-		<div class="mt-6"><Project name="Pixel World" src="/images/pixel-world.png" /></div>
-	</section>
-
-	<section class="mt-40">
-		<div class="container mx-auto px-4 lg:px-0">
-			<div class="flex flex-col items-center justify-center">
-				<h2>
-					<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">03.</span><span
-						class="font-kiona font-semibold text-white opacity-90">Contact</span
-					>
-				</h2>
-				<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
-					Drop a line
-				</h3>
-				<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
-					Want to know more? Have a talk about your project? Drop me a line and let's talk about it.
-				</p>
-				<button
-					class="mt-6 text-sm border border-cyber-100 rounded-sm px-6 py-3 bg-graypurple-900 text-cyber-100 transition duration-200 font-bold hover:bg-cyber-100 hover:bg-opacity-10"
-					>CONTACT ME</button
+	<section class="container mx-auto px-4 lg:px-0 mt-28">
+		<div class="flex flex-col items-center justify-center">
+			<h2>
+				<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">04.</span><span
+					class="font-kiona font-semibold text-white opacity-90">Contact</span
 				>
-			</div>
+			</h2>
+			<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
+				Drop a line
+			</h3>
+			<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
+				Want to know more? Have a talk about your project? Drop me a line and let's talk about it.
+			</p>
+			<button
+				class="mt-6 text-sm border border-cyber-100 rounded-sm px-6 py-3 bg-graypurple-900 text-cyber-100 transition duration-200 font-bold hover:bg-cyber-100 hover:bg-opacity-10"
+				>CONTACT ME</button
+			>
 		</div>
 	</section>
 </main>
@@ -435,11 +508,20 @@
 		.mountain {
 			bottom: -21.5rem;
 		}
+
+		.hair {
+			top: -29rem;
+			display: block;
+		}
 	}
 
 	@media (min-width: 1100px) {
 		.mountain {
 			bottom: -24rem;
+		}
+
+		.hair {
+			top: -23.5rem;
 		}
 	}
 
@@ -447,11 +529,19 @@
 		.mountain {
 			bottom: -28rem;
 		}
+
+		.hair {
+			top: -17rem;
+		}
 	}
 
 	@media (min-width: 1280px) {
 		.mountain {
 			bottom: -30rem;
+		}
+
+		.hair {
+			top: -16rem;
 		}
 	}
 
@@ -459,11 +549,19 @@
 		.mountain {
 			bottom: -32rem;
 		}
+
+		.hair {
+			top: -10rem;
+		}
 	}
 
 	@media (min-width: 1460px) {
 		.mountain {
 			bottom: -35rem;
+		}
+
+		.hair {
+			top: 0rem;
 		}
 	}
 
