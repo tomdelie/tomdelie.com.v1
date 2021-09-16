@@ -1,4 +1,7 @@
 <script lang="typescript">
+  	import TranslationEN from '../translations/fr';
+    const translation = TranslationEN;
+
   export let level: number = 1;
   export let name: string = '?';
   export let src: string = '';
@@ -13,9 +16,9 @@
     <img class="{favorite ? '' : 'hidden'} cursor-help ml-2" src="/images/icons/favorite.svg" width="14" title="Favorite technology" alt="Favorite" />
   </div>
   <div class="h-1 flex items-center ml-4">
-    <div class="{level >= 1 ? 'bg-cyber-100' : 'border border-white opacity-80'} w-6 h-full rounded-full cursor-help" title="Beginner"></div>
-    <div class="{level >= 2 ? 'bg-cyber-100' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title="Intermediate"></div>
-    <div class="{level >= 3 ? 'bg-cyber-100' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title="Advanced"></div>
+    <div class="{level >= 1 ? 'bg-cyber-100' : 'border border-white opacity-80'} w-6 h-full rounded-full cursor-help" title={translation.beginner}></div>
+    <div class="{level >= 2 ? 'bg-cyber-100' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title={translation.intermediate}></div>
+    <div class="{level >= 3 ? 'bg-cyber-100' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title={translation.advanced}></div>
   </div>
 </div>
 

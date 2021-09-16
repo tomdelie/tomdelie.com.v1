@@ -1,4 +1,7 @@
 <script lang="ts">
+	import TranslationEN from '../translations/fr';
+
+	const translation = TranslationEN;
 	export let name: string;
 	export let src: string;
 	export let description: string = '';
@@ -10,10 +13,9 @@
 		<img class="transition duration-200 opacity-70" {src} alt="Project 1" />
 
 		<div class="absolute top-0 w-full h-full flex justify-center items-center">
-			<span
-				class="sun shadow-lg z-30 bg-purple-900 rounded-full w-28 p-10 h-28 flex items-center justify-center text-center uppercase font-semibold font-kiona text-white"
-				>View project</span
-			>
+			<span class="sun shadow-lg z-30 bg-purple-900 rounded-full w-28 p-10 h-28 flex items-center justify-center text-center uppercase font-semibold font-kiona text-white">
+				{translation.projects_viewproject}
+			</span>
 		</div>
 	</div>
 

@@ -1,6 +1,12 @@
+<script lang="ts">
+	import TranslationEN from '../translations/fr';
+
+	const translation = TranslationEN;
+</script>
+
 <footer class="flex flex-col items-center justify-center mt-20 pb-6 pt-20 relative">
 	<span class="text-white opacity-90 italic pt-4 tracking-widest text-xs mb-2"
-		>Designed & Built by <span class="font-semibold">Tom Délié</span></span
+		>{translation.footer_credits} <span class="font-semibold">Tom Délié</span></span
 	>
 	<div class="flex items-center">
 		<a class="mr-6" href="https://github.com/tomdelie" target="_blank">

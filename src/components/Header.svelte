@@ -1,15 +1,21 @@
+<script lang="ts">
+	import TranslationEN from '../translations/fr';
+
+	const translation = TranslationEN;
+</script>
+
 <header class="w-full z-50 fixed">
 	<div class="glass px-6 h-10 flex items-center justify-between">
 		<div
 			class="sun w-6 h-6 rounded-full cursor-pointer hover:shadow"
-			on:click={() => window.location.reload(false)}
+			on:click="{() => window.location.reload()}"
 		/>
 		<div class="h-full flex items-center">
 			<ol class="hidden md:flex items-center mr-10 text-xs text-white text-opacity-90 h-full">
-				<li class="mr-6"><span>01.</span>About</li>
-				<li class="mr-6"><span>02.</span>Projects</li>
-				<li class="mr-6"><span>03.</span>Skills</li>
-				<li><span>04.</span>Contact</li>
+				<li class="mr-6"><span>01.</span>{translation.about_title}</li>
+				<li class="mr-6"><span>02.</span>{translation.projects_title}</li>
+				<li class="mr-6"><span>03.</span>{translation.skills_title}</li>
+				<li><span>04.</span>{translation.contact_title}</li>
 			</ol>
 			<div class="hidden md:flex items-center">
 				<img

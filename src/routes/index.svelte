@@ -1,7 +1,7 @@
 <script lang="ts">
-	import TranslationFR from '../translations/fr';
+	import TranslationEN from '../translations/fr';
 
-	const __ = TranslationFR; // current translation
+	const translation = TranslationEN;
 
 	import WaveSeparator from '../components/WaveSeparator.svelte';
 	import Skill from '../components/Skill.svelte';
@@ -209,7 +209,7 @@
 				<h1 class="z-30 main-title font-streamster">Tom Délié</h1>
 				<span
 					class="z-30 main-subtitle text-lg uppercase font-kiona font-bold text-black text-sm bg-white -m-2 px-3"
-					>Full Stack JavaScript Developer</span
+					>{translation.subtitle}</span
 				>
 			</div>
 		</div>
@@ -217,43 +217,42 @@
 	<WaveSeparator top="#240145" bottom="rgba(0, 0, 0, 0)" />
 	<section id="about" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-56 relative">
 		<h2>
-			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">01.</span><span
-				class="font-kiona font-semibold text-white text-opacity-90">About me</span
-			>
+			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">01.</span>
+			<span class="font-kiona font-semibold text-white text-opacity-90">{translation.about_title}</span>
 		</h2>
-		<p class="text-white text-opacity-80 my-6">{__.about}</p>
+		<p class="text-white text-opacity-80 my-6">{translation.about_paragraph}</p>
 	</section>
 
 	<section id="projects" class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 mt-20 md:mt-28">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">02.</span><span
-				class="font-kiona font-semibold text-white text-opacity-90">Projects</span
+				class="font-kiona font-semibold text-white text-opacity-90">{translation.projects_title}</span
 			>
 		</h2>
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
 			<Project
 				name="Symfonax"
 				src="/images/mockup.png"
-				description="School project. A web app that let you watch youtube videos with your friends."
-				tags={['PHP', 'Symfony 5', 'JavaScript', 'CSS3', 'PostgreSQL']}
+				description={translation.projects_symfonax_description}
+				tags={translation.projects_symfonax_tags}
 			/>
 			<Project
 				name="E-Furrax"
 				src="/images/efurrax-5.png"
-				description="School project. A web app that help you find the teammate that matches your requirements."
-				tags={['TypeScript', 'Vue.js', 'JavaScript', 'GraphQL', 'PostgreSQL', 'MongoDB', 'TailwindCSS']}
+				description={translation.projects_efurrax_description}
+				tags={translation.projects_efurrax_tags}
 			/>
 			<Project 
 				name="Developer Skill Tree" 
 				src="/images/dev-skill-tree.png"
-				description="Dev skillsets presented as a skill tree. A quick project to learn some Svelte."
-				tags={['TypeScript', 'Svelte', 'TailwindCSS']} 
+				description={translation.projects_dst_description}
+				tags={translation.projects_dst_tags}
 			/>
 			<Project 
 				name="Pixel World" 
 				src="/images/pixel-world.png"
-				description="School project. 2D platformer game made with Godot Engine."
-				tags={['Godot Engine']} 
+				description={translation.projects_pixelworld_description}
+				tags={translation.projects_pixelworld_tags} 
 			/>
 		</div>
 	</section>
@@ -261,7 +260,7 @@
 	<section id="skills" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-28 relative">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">03.</span><span
-				class="font-kiona font-semibold text-white text-opacity-90">Skills</span
+				class="font-kiona font-semibold text-white text-opacity-90">{translation.skills_title}</span
 			>
 		</h2>
 
@@ -320,7 +319,7 @@
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">Automation</h3>
+				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">{translation.skills_title_automation}</h3>
 				<Skill
 					moreClass="border-b"
 					src="/images/icons/automation/docker.svg"
@@ -349,7 +348,7 @@
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold mb-2 text-opacity-80">Others</h3>
+				<h3 class="text-xs text-white font-semibold mb-2 text-opacity-80">{translation.skills_title_others}</h3>
 				<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level={3} />
 				<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level={2} />
 				<Skill
@@ -367,18 +366,18 @@
 		<div class="flex flex-col items-center justify-center">
 			<h2>
 				<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">04.</span><span
-					class="font-kiona font-semibold text-white opacity-90">Contact</span
+					class="font-kiona font-semibold text-white opacity-90">{translation.contact_title}</span
 				>
 			</h2>
 			<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
-				Drop a line
+				{translation.contact_headline}
 			</h3>
 			<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
-				Want to know more? Have a talk about your project? Drop me a line and let's talk about it.
+				{translation.contact_paragraph}
 			</p>
 			<button
 				class="contact-button overflow-hidden z-10 hover:shadow-lg relative mt-6 text-sm rounded px-6 py-3 text-white font-bold transition duration-200"
-				>CONTACT ME</button
+				>{translation.contact_button}</button
 			>
 		</div>
 	</section>
