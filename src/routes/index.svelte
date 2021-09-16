@@ -241,18 +241,21 @@
 				src="/images/efurrax-5.png"
 				description={translation.projects_efurrax_description}
 				tags={translation.projects_efurrax_tags}
+				github="https://github.com/e-furrax"
 			/>
 			<Project 
 				name="Developer Skill Tree" 
 				src="/images/dev-skill-tree.png"
 				description={translation.projects_dst_description}
 				tags={translation.projects_dst_tags}
+				github="https://github.com/tomdelie/developer-skill-tree"
 			/>
 			<Project 
 				name="Pixel World" 
 				src="/images/pixel-world.png"
 				description={translation.projects_pixelworld_description}
-				tags={translation.projects_pixelworld_tags} 
+				tags={translation.projects_pixelworld_tags}
+				github="https://github.com/godot-pour-les-nuls/pixel-world"
 			/>
 		</div>
 	</section>
