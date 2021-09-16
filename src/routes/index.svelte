@@ -1,10 +1,16 @@
 <script lang="ts">
+	import TranslationFR from '../translations/fr';
+
+	const __ = TranslationFR; // current translation
+
 	import WaveSeparator from '../components/WaveSeparator.svelte';
 	import Skill from '../components/Skill.svelte';
 	import Project from '../components/Project.svelte';
 	import Footer from '../components/Footer.svelte';
+	import Header from '../components/Header.svelte';
 </script>
 
+<Header />
 <main>
 	<svg class="hidden hair z-10 w-full absolute left-0 opacity-70" width="1440" height="2996" viewBox="0 0 1440 2996" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_d)">
@@ -36,8 +42,7 @@
 		</filter>
 		</defs>
 	</svg>
-		
-				
+					
 	<section class="h-screen w-full">
 		<div id="cover-page" class="h-screen relative overflow-hidden">
 			<svg
@@ -210,34 +215,50 @@
 		</div>
 	</section>
 	<WaveSeparator top="#240145" bottom="rgba(0, 0, 0, 0)" />
-	<section class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-56 relative">
+	<section id="about" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-56 relative">
 		<h2>
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">01.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">About me</span
 			>
 		</h2>
-		<p class="text-white text-opacity-80 my-6">
-			Hey, I'm Tom Délié a 23 years old french full-stack developer that recently graduated in
-			software engineering (July 2021). I worked as an internship student during 3 years, mainly as
-			a Node.js back-end developer. I'm currently working as a freelance developer.
-		</p>
+		<p class="text-white text-opacity-80 my-6">{__.about}</p>
 	</section>
 
-	<section class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 mt-28">
+	<section id="projects" class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 mt-20 md:mt-28">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">02.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">Projects</span
 			>
 		</h2>
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-			<Project name="Symfonax" src="/images/mockup.png" />
-			<Project name="E-Furrax" src="/images/efurrax-5.png" />
-			<Project name="Developer Skill Tree" src="/images/dev-skill-tree.png" />
-			<Project name="Pixel World" src="/images/pixel-world.png" />
+			<Project
+				name="Symfonax"
+				src="/images/mockup.png"
+				description="School project. A web app that let you watch youtube videos with your friends."
+				tags={['PHP', 'Symfony 5', 'JavaScript', 'CSS3', 'PostgreSQL']}
+			/>
+			<Project
+				name="E-Furrax"
+				src="/images/efurrax-5.png"
+				description="School project. A web app that help you find the teammate that matches your requirements."
+				tags={['TypeScript', 'Vue.js', 'JavaScript', 'GraphQL', 'PostgreSQL', 'MongoDB', 'TailwindCSS']}
+			/>
+			<Project 
+				name="Developer Skill Tree" 
+				src="/images/dev-skill-tree.png"
+				description="Dev skillsets presented as a skill tree. A quick project to learn some Svelte."
+				tags={['TypeScript', 'Svelte', 'TailwindCSS']} 
+			/>
+			<Project 
+				name="Pixel World" 
+				src="/images/pixel-world.png"
+				description="School project. 2D platformer game made with Godot Engine."
+				tags={['Godot Engine']} 
+			/>
 		</div>
 	</section>
 
-	<section class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-28 relative">
+	<section id="skills" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-28 relative">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">03.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">Skills</span
@@ -342,7 +363,7 @@
 		</div>
 	</section>
 
-	<section class="container mx-auto px-4 lg:px-0 mt-40">
+	<section id="contact" class="container mx-auto px-4 lg:px-0 mt-40">
 		<div class="flex flex-col items-center justify-center">
 			<h2>
 				<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">04.</span><span
@@ -392,7 +413,7 @@
 	}
 
 	.main-title {
-		font-size: 6rem;
+		font-size: 4.75rem;
 		color: #fbfdf8;
 		text-shadow: white 0px 0px 20px;
 	}
@@ -434,6 +455,10 @@
 		.mountain {
 			bottom: -2rem;
 		}
+
+		.main-title {
+			font-size: 4rem;
+		}
 	}
 
 	@media (min-width: 450px) {
@@ -446,17 +471,29 @@
 		.mountain {
 			bottom: -6rem;
 		}
+
+		.main-title {
+			font-size: 6rem;
+		}
 	}
 
 	@media (min-width: 590px) {
 		.mountain {
 			bottom: -7.5rem;
 		}
+
+		.main-title {
+			font-size: 6rem;
+		}
 	}
 
 	@media (min-width: 640px) {
 		.mountain {
 			bottom: -9.5rem;
+		}
+
+		.main-title {
+			font-size: 6rem;
 		}
 	}
 

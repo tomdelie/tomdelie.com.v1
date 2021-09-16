@@ -1,9 +1,11 @@
 <script lang="ts">
 	export let name: string;
 	export let src: string;
+	export let description: string = '';
+	export let tags: string[] = [];
 </script>
 
-<div class="project-preview z-20 border-2 rounded-lg transition duration-200 cursor-pointer bg-graypurple-900">
+<div class="project-preview z-20 border-2 rounded-lg transition duration-200 cursor-pointer bg-graypurple-900" style="background-color: #1E1A3C;">
 	<div class="overflow-hidden relative rounded-t-lg">
 		<img class="transition duration-200 opacity-70" {src} alt="Project 1" />
 
@@ -15,21 +17,27 @@
 		</div>
 	</div>
 
-	<div class="p-4 text-xs text-white rounded-b-lg border-t" style="background-color: #1E1A3C;">
+	<div class="p-4 text-xs text-white border-t" >
 		<h3 class="font-bold text-white text-opacity-90">{name}</h3>
-		<p class="text-opacity-70 text-white my-2">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id fugit totam expedita
-			minus! Esse sed tenetur deleniti quos culpa.
+		<p class="description text-opacity-70 text-white my-2">
+			{description}
 		</p>
-		<div class="flex flex-wrap font-bold items-center text-white text-opacity-70 ">
-			<span class="mr-3">JavaScript</span>
-			<span class="mr-3">Vue.js</span>
-			<span>PHP</span>
+		<div class="flex flex-wrap font-bold items-center text-white text-opacity-70">
+			{#each tags as tag}
+				<span class="mr-3">{tag}</span>
+			{/each}
 		</div>
 	</div>
 </div>
 
 <style lang="css" scoped>
+	.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
 	.project-preview,
 	.project-preview * {
 		border-color: rgba(255, 255, 255, 0.06);

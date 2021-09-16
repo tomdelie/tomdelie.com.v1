@@ -19,36 +19,25 @@
   </div>
 </div>
 
-<style lang="css">
+<style lang="postcss">
   .skill {
-    transition: .2s all ease-out;
+    @pply transition duration-200;
   }
 
   .skill:hover {
-    background: linear-gradient(-90deg, rgba(253, 25, 173, 0) 20%, rgba(253, 25, 173, 0.1) 100%);
+    background: linear-gradient(-90deg, rgba(253, 25, 173, 0) 20%, rgba(255, 99, 200, 0.07) 100%);
   }
 
   .skill::before {
+    @apply absolute left-0 top-0 bg-transparent h-full transition duration-200;
     content: "";
     width: 2px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color:transparent;
   }
 
   .skill:hover::before {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    @apply transition duration-200;
     background-color: #FDACE0;
-    box-shadow: rgba(253, 25, 173, 1) 1px 0px 8px;
-    transition: .2s all ease-in;
+    box-shadow: rgb(255, 99, 200) 1px 0px 8px;
   }
 
   .skill:hover > .info {
