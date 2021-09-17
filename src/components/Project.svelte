@@ -53,8 +53,7 @@
 
 <style lang="css" scoped>
 	.github:hover svg {
-    filter: drop-shadow(0px 0px 4px #ea1ab4);
-		color: #F8D8F1;
+		color: #fdace0;
   }
 
 	.description {

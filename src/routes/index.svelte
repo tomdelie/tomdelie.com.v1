@@ -217,7 +217,7 @@
 	<WaveSeparator top="#240145" bottom="rgba(0, 0, 0, 0)" />
 	<section id="about" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-56 relative">
 		<h2>
-			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">01.</span>
+			<span class="font-semibold font-kiona mr-2 shadow-pink">01.</span>
 			<span class="font-kiona font-semibold text-white text-opacity-90">{translation.about_title}</span>
 		</h2>
 		<p class="text-white text-opacity-80 my-6">{translation.about_paragraph}</p>
@@ -225,7 +225,7 @@
 
 	<section id="projects" class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 mt-20 md:mt-28">
 		<h2 class="mb-6">
-			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">02.</span><span
+			<span class="font-semibold font-kiona mr-2 shadow-pink">02.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">{translation.projects_title}</span
 			>
 		</h2>
@@ -262,7 +262,7 @@
 
 	<section id="skills" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-28 relative">
 		<h2 class="mb-6">
-			<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">03.</span><span
+			<span class="font-semibold font-kiona mr-2 shadow-pink">03.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">{translation.skills_title}</span
 			>
 		</h2>
@@ -368,7 +368,7 @@
 	<section id="contact" class="container mx-auto px-4 lg:px-0 mt-40">
 		<div class="flex flex-col items-center justify-center">
 			<h2>
-				<span class="font-semibold font-kiona mr-2 text-cyber-100 shadow-pink">04.</span><span
+				<span class="font-semibold font-kiona mr-2 shadow-pink">04.</span><span
 					class="font-kiona font-semibold text-white opacity-90">{translation.contact_title}</span
 				>
 			</h2>
@@ -407,7 +407,8 @@
 	}
 
 	.shadow-pink {
-		text-shadow: #ea1ab4 0px 0px 6px;
+		color: #FB4DBE;
+		text-shadow: rgb(251, 77, 190) 1px 0px 8px;
 	}
 
 	.separator > .line {
