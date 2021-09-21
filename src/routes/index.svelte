@@ -208,14 +208,14 @@
 			<div class="h-full w-full flex flex-col items-center justify-center">
 				<h1 class="z-30 main-title font-streamster">Tom Délié</h1>
 				<span
-					class="z-30 main-subtitle text-lg uppercase font-kiona font-bold text-black text-sm bg-white -m-2 px-3"
+					class="z-30 main-subtitle uppercase font-kiona font-bold text-black text-sm bg-white -m-2 px-3"
 					>{translation.subtitle}</span
 				>
 			</div>
 		</div>
 	</section>
 	<WaveSeparator top="#240145" bottom="rgba(0, 0, 0, 0)" />
-	<section id="about" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-56 relative">
+	<section id="about" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 pt-20 md:pt-56 relative">
 		<h2>
 			<span class="font-semibold font-kiona mr-2 shadow-pink">01.</span>
 			<span class="font-kiona font-semibold text-white text-opacity-90">{translation.about_title}</span>
@@ -223,7 +223,7 @@
 		<p class="text-white text-opacity-80 my-6">{translation.about_paragraph}</p>
 	</section>
 
-	<section id="projects" class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 mt-20 md:mt-28">
+	<section id="projects" class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 pt-20 md:pt-28">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 shadow-pink">02.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">{translation.projects_title}</span
@@ -260,7 +260,7 @@
 		</div>
 	</section>
 
-	<section id="skills" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 mt-20 md:mt-28 relative">
+	<section id="skills" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 pt-20 md:pt-28 relative">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 shadow-pink">03.</span><span
 				class="font-kiona font-semibold text-white text-opacity-90">{translation.skills_title}</span
@@ -365,7 +365,7 @@
 		</div>
 	</section>
 
-	<section id="contact" class="container mx-auto px-4 lg:px-0 mt-40">
+	<section id="contact" class="container mx-auto px-4 lg:px-0 pt-40">
 		<div class="flex flex-col items-center justify-center">
 			<h2>
 				<span class="font-semibold font-kiona mr-2 shadow-pink">04.</span><span
