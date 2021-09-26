@@ -5,21 +5,27 @@
 	const translation = TranslationEN;
 
 	let menuRef;
+	let navRef;
 	let opened = false;
 
 	const handleMenu = () => {
-		console.log(opened);
 		if (opened) {
-			menuRef.classList.add('translate-x-52');
+			navRef.classList.add('translate-x-52');
+			menuRef.classList.remove('mobile-glass');
+			menuRef.classList.add('pointer-events-none');
 		} else {
-			menuRef.classList.remove('translate-x-52');
+			navRef.classList.remove('translate-x-52');
+			console.log('okok')
+			menuRef.classList.add('mobile-glass');
+			menuRef.classList.remove('pointer-events-none');
+
 		}
 		opened = !opened;
 	};
 
 	const handleClick = (event) => {
 		if (event.target.classList.contains('mobile')) {
-			this.handleMenu();
+			handleMenu();
 		}
 	};
 </script>
@@ -55,8 +61,8 @@
 			/>
 		</nav>
 	</div>
-	<div bind:this={menuRef} on:click={handleClick} class="mobile z-40 transform flex top-0 justify-end md:hidden translate-x-52 fixed w-full h-full transition duration-700">
-		<nav class="w-52 p-6 h-full" style="background-color: #3A3272;">
+	<div bind:this={menuRef} on:click={handleClick} class="pointer-events-none mobile z-40 flex top-0 left-0 justify-end md:hidden fixed w-full h-full transition duration-700">
+		<nav bind:this={navRef} class="shadow-lg w-52 p-6 h-full transform translate-x-52 transition duration-700" style="background-color: #3A3272;">
 			<div class="hidden md:flex items-center">
 				<img
 					class="mr-3 opacity-90 cursor-pointer"
@@ -121,5 +127,11 @@
 		-webkit-backdrop-filter: blur(10px) saturate(170%);
 		background-color: rgba(255, 255, 255, 0.1);
 		border-color: rgba(255, 255, 255, 0.06);
+	}
+
+	:global(.mobile-glass) {
+		backdrop-filter: blur(2px) saturate(90%);
+		-webkit-backdrop-filter: blur(2px) saturate(90%);
+		background-color: rgba(255, 255, 255, 0.1);
 	}
 </style>

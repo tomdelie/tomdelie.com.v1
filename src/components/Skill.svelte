@@ -1,6 +1,6 @@
-<script lang="typescript">
-  	import TranslationEN from '../translations/fr';
-    const translation = TranslationEN;
+<script lang="ts">
+  import TranslationEN from '../translations/fr';
+  const translation = TranslationEN;
 
   export let level: number = 1;
   export let name: string = '?';

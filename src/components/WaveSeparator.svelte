@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   export let top: string;
   export let bottom: string;
 </script>
