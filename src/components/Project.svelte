@@ -9,8 +9,8 @@
 	export let github: string = '';
 </script>
 
-<div class="project-preview z-20 border-2 rounded-lg transition duration-200 bg-graypurple-900" style="background-color: #1E1A3C;">
-	<div class="cover-image cursor-pointer overflow-hidden relative rounded-t-lg">
+<div class="project-preview z-20 border shadow-lg hover:shadow-xl transform hover:-translate-y-2 rounded-sm transition duration-700 bg-graypurple-900" style="background-color: #1E1A3C;">
+	<div class="cover-image cursor-pointer overflow-hidden relative rounded-t-sm">
 		<img class="project-background transition duration-200 opacity-70" {src} alt="Project 1" />
 
 		<div class="absolute top-0 w-full h-full flex justify-center items-center">

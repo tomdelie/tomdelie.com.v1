@@ -11,7 +11,7 @@
 </script>
 
 <Header />
-<main>
+<main id="home">
 	<svg class="hidden hair z-10 w-full absolute left-0 opacity-70" width="1440" height="2996" viewBox="0 0 1440 2996" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_d)">
 		<path d="M362.5 0.5C362.5 460 533.5 656.5 707 752.5C880.5 848.5 1382.5 709 1450 1156.5C1517.5 1604 1260 1792 823.5 1897.5C387 2003 -69.5 2228.5 -210.5 2519.5C-351.5 2810.5 -508.5 2881 -912 2969" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -379,7 +379,7 @@
 				{translation.contact_paragraph}
 			</p>
 			<button
-				class="contact-button overflow-hidden z-10 hover:shadow-lg relative mt-6 text-sm rounded px-6 py-3 text-white font-bold transition duration-200"
+				class="contact-button overflow-hidden z-10 hover:shadow-xl transform hover:-translate-y-1 relative mt-6 text-sm rounded-sm px-6 py-3 text-white font-bold transition duration-700"
 				>{translation.contact_button}</button
 			>
 		</div>
@@ -397,13 +397,13 @@
 		width: 200%;
 		height: 400%;
 		background: linear-gradient(-130deg, #e4a11e 30%, #ea1ab4 60%);
-		transition: all 0.5s;
+		transition: all 0.7s;
 		transform: translate(-50%, -50%);
 	}
 
 	.contact-button:hover::before {
-		transition: all 0.5s;
-		transform: translate(-50%, -50%) rotate(-180deg);
+		transition: all 0.7s;
+		transform: translate(-50%, -50%) rotate(-200deg);
 	}
 
 	.shadow-pink {

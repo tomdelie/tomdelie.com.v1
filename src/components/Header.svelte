@@ -11,12 +11,13 @@
 	const handleMenu = () => {
 		if (opened) {
 			navRef.classList.add('translate-x-52');
-			menuRef.classList.remove('mobile-glass');
+			menuRef.classList.remove('bg-black');
+			menuRef.classList.remove('bg-opacity-20');
 			menuRef.classList.add('pointer-events-none');
 		} else {
 			navRef.classList.remove('translate-x-52');
-			console.log('okok')
-			menuRef.classList.add('mobile-glass');
+			menuRef.classList.add('bg-black');
+			menuRef.classList.add('bg-opacity-20');
 			menuRef.classList.remove('pointer-events-none');
 
 		}
@@ -28,14 +29,17 @@
 			handleMenu();
 		}
 	};
+
+	let scrolled = false;
+	const handleScroll = () => {
+		scrolled = !!window.scrollY;
+	};
 </script>
 
-<header class="w-full z-50 fixed">
-	<div class="glass px-6 h-10 flex items-center justify-between">
-		<div
-			class="sun w-6 h-6 rounded-full cursor-pointer hover:shadow"
-			on:click="{() => window.location.reload()}"
-		/>
+<svelte:window on:scroll={handleScroll}/>
+<header class="{scrolled ? 'translate-y-0' : '-translate-y-12' } backdrop-filter shadow-sm backdrop-blur transform z-40 fixed w-full transition duration-700" style="background-color: rgba(58, 50, 114, 0.5);">
+	<div class="glass px-6 h-12 flex items-center justify-between">
+		<a href="#home"><div class="sun w-6 h-6 rounded-full cursor-pointer hover:shadow"></div></a>
 		<nav class="h-full flex items-center">
 			<ol class="hidden md:flex items-center mr-10 text-xs text-white text-opacity-90 h-full">
 				<a href="#about" class="mr-6"><li>{translation.about_title}</li></a>
@@ -61,26 +65,26 @@
 			/>
 		</nav>
 	</div>
-	<div bind:this={menuRef} on:click={handleClick} class="pointer-events-none mobile z-40 flex top-0 left-0 justify-end md:hidden fixed w-full h-full transition duration-700">
-		<nav bind:this={navRef} class="shadow-lg w-52 p-6 h-full transform translate-x-52 transition duration-700" style="background-color: #3A3272;">
-			<div class="hidden md:flex items-center">
-				<img
-					class="mr-3 opacity-90 cursor-pointer"
-					src="/images/icons/language/fr.svg"
-					width="24"
-          alt="French"
-				/>
-				<img class="opacity-90 cursor-pointer" src="/images/icons/language/en.svg" alt="English" width="24" />
-			</div>
-			<ol class="flex flex-col items-start text-white text-sm my-6">
-				<a on:click={handleMenu} href="#about" class="pb-0.5"><li><span>{translation.about_title}</span></li></a>
-				<a on:click={handleMenu} href="#projects" class="mt-5 pb-0.5"><li><span>{translation.projects_title}</span></li></a>
-				<a on:click={handleMenu} href="#skills" class="mt-5 pb-0.5"><li><span>{translation.skills_title}</span></li></a>
-				<a on:click={handleMenu} href="#contact" class="mt-5 pb-0.5"><li><span>{translation.contact_title}</span></li></a>
-			</ol>
-			<Links size={20} />
-		</nav>
-	</div>
+</header>
+<header bind:this={menuRef} on:click={handleClick} class="pointer-events-none mobile z-40 flex top-0 left-0 justify-end md:hidden fixed w-full h-full transition duration-700">
+	<nav bind:this={navRef} class="w-52 p-6 h-full transform translate-x-52 transition duration-700 backdrop-filter shadow-sm backdrop-blur" style="background-color: rgba(58, 50, 114, 1);">
+		<div class="hidden md:flex items-center">
+			<img
+				class="mr-3 opacity-90 cursor-pointer"
+				src="/images/icons/language/fr.svg"
+				width="24"
+				alt="French"
+			/>
+			<img class="opacity-90 cursor-pointer" src="/images/icons/language/en.svg" alt="English" width="24" />
+		</div>
+		<ol class="flex flex-col items-start text-white text-sm my-6">
+			<a on:click={handleMenu} href="#about" class="pb-0.5"><li><span>{translation.about_title}</span></li></a>
+			<a on:click={handleMenu} href="#projects" class="mt-5 pb-0.5"><li><span>{translation.projects_title}</span></li></a>
+			<a on:click={handleMenu} href="#skills" class="mt-5 pb-0.5"><li><span>{translation.skills_title}</span></li></a>
+			<a on:click={handleMenu} href="#contact" class="mt-5 pb-0.5"><li><span>{translation.contact_title}</span></li></a>
+		</ol>
+		<Links size={20} />
+	</nav>
 </header>
 
 <style lang="postcss">
@@ -122,16 +126,7 @@
 	}
 
 	.glass {
-		@apply transition duration-200;
-		backdrop-filter: blur(10px) saturate(170%);
-		-webkit-backdrop-filter: blur(10px) saturate(170%);
-		background-color: rgba(255, 255, 255, 0.1);
-		border-color: rgba(255, 255, 255, 0.06);
-	}
-
-	:global(.mobile-glass) {
-		backdrop-filter: blur(2px) saturate(90%);
-		-webkit-backdrop-filter: blur(2px) saturate(90%);
-		background-color: rgba(255, 255, 255, 0.1);
+		/* backdrop-filter: blur(10px) saturate(170%); */
+		/* background-color: rgba(255, 255, 255, 0.1); */
 	}
 </style>
