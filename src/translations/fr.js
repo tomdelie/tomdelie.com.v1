@@ -21,7 +21,7 @@ export default {
   'skills_advanced': 'Avancé',
   'contact_title': 'Contact',
   'contact_headline': 'Envoyez un message',
-  'contact_paragraph': "Vous voulez en savoir plus ? Parler de votre projet ? Envoyez-moi un message et parlons-en.",
+  'contact_paragraph': "Vous voulez en savoir plus ? Parler de votre projet ? Envoyez-moi un message et discutons-en.",
   'contact_button': 'Contactez-moi',
   'footer_credits': 'Conçu et développé par'
 };

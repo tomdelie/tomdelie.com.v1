@@ -1,8 +1,8 @@
 <script lang="ts">
-  import TranslationEN from '../../translations/fr';
+  import Translation from '../../translations/fr';
   import NightSky from './NightSky.svelte';
   import WaveSeparator from '../WaveSeparator.svelte';
-	const translation = TranslationEN;
+	const translation = Translation;
 </script>
 
 <svg shape-rendering="geometricPrecision" class="hidden hair z-10 w-full absolute left-0 opacity-80" width="1440" height="2996" viewBox="0 0 1440 2996" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,83 +117,73 @@
 
     <div
       id="sun"
-      class="z-20 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"
+      class="z-20 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 absolute bottom-28 left-1/2 transform -translate-x-1/2 rounded-full"
     />
 
-    <svg
-      class="z-20 mountain absolute 2xl:hidden"
-      viewBox="0 0 1440 873"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M44 54L6.10352e-05 86V873H1440V73.607L1402.96 62.6673L1351.91 73.507L1287.34 55.5537L1209.26 33.5355L1146.19 67.4097L1051.6 73.507L978.019 46.7464L924.964 33.5355L876.914 55.5537L827.362 33.5355C804.728 37.0858 792.317 39.8974 770.803 46.7464L723.754 21.6795L665.193 16.2596L617.143 55.5537L554.578 78.2494L504.526 62.6673C474.654 48.2929 411.978 22.6044 410.785 24.5357C402.262 38.333 357.451 76.7402 346.861 78.2494L260.772 46.7464L197.456 0.547691C197.033 0.238923 196.456 0.294171 196.116 0.692582C177.655 22.3175 137.164 63.9166 118.123 62.6673L44 54Z"
-        fill="url(#paint0_linear)"
-      />
+    <svg class="z-30 absolute w-full bottom-0 hidden 2xl:block" viewBox="0 0 1440 379" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M964.871 194L887.13 141.121L901.897 188.841L926.218 210.766L941.853 255.477L990.929 306.206L1152.92 378H1440V306.206L1395.27 270.093L1382.24 230.542L1350.97 194L1369.64 169.925L1152.92 10L1208.52 121.346L1180.29 183.682L1208.52 261.495L1112.97 270.093L1078.22 230.542L964.871 194Z" fill="url(#mt1_paint)"/>
+      <path d="M887.13 141.121L835.448 210.766L769.868 255.477L721.226 314.374L650 378H1152.92L990.929 306.206L941.853 255.477L926.218 210.766L901.897 188.841L887.13 141.121Z" fill="url(#mt1_paint)"/>
+      <path d="M1152.92 10L964.871 194L1078.22 230.542L1112.97 270.093L1208.52 261.495L1180.29 183.682L1208.52 121.346L1152.92 10Z" fill="url(#mt1_paint)"/>
+      <path d="M1440 107.589L1369.64 169.925L1350.97 194L1382.24 230.542L1395.27 270.093L1440 306.206V107.589Z" fill="url(#mt1_paint)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M964.871 194L887.13 141.121L901.897 188.841L926.218 210.766L941.853 255.477L990.929 306.206L1152.92 378H1440V306.206L1395.27 270.093L1382.24 230.542L1350.97 194L1369.64 169.925L1152.92 10L1208.52 121.346L1180.29 183.682L1208.52 261.495L1112.97 270.093L1078.22 230.542L964.871 194Z" fill="#240145"/>
+      <path d="M887.13 141.121L964.871 194M887.13 141.121L835.448 210.766L769.868 255.477L721.226 314.374L650 378H1152.92M887.13 141.121L901.897 188.841L926.218 210.766L941.853 255.477L990.929 306.206L1152.92 378M964.871 194L1152.92 10M964.871 194L1078.22 230.542L1112.97 270.093L1208.52 261.495L1180.29 183.682L1208.52 121.346L1152.92 10M1152.92 10L1369.64 169.925M1369.64 169.925L1440 107.589V306.206M1369.64 169.925L1350.97 194L1382.24 230.542L1395.27 270.093L1440 306.206M1152.92 378H1440V306.206" stroke="url(#mt2_paint)"/>
+      <path d="M0 196.251L145.567 1L318.674 168.729L493.256 75.2576L718 378H1.47534L0 196.251Z" fill="url(#mt3_paint)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 196.251V103.818L145.567 1L116.552 113.685L167.697 141.207L185.893 205.079L221.793 196.251L318.674 168.729L493.256 75.2576L452.438 173.402L517.353 253.891V304.262L718 378H0V196.251Z" fill="#240145"/>
+      <path d="M145.567 1L318.674 168.729M145.567 1L116.552 113.685L167.697 141.207L185.893 205.079L221.793 196.251L318.674 168.729M145.567 1L0 103.818V196.251V378H718M318.674 168.729L493.256 75.2576M493.256 75.2576L718 378M493.256 75.2576L452.438 173.402L517.353 253.891V304.262L718 378" stroke="url(#mt4_paint)"/>
       <defs>
-        <linearGradient
-          id="paint0_linear"
-          x1="720"
-          y1="-3.84753e-08"
-          x2="719.74"
-          y2="661"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3A0366" />
-          <stop offset="1" stop-color="#97089A" />
+        <linearGradient id="mt1_paint" x1="1045" y1="-113.383" x2="1045" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8D087D"/>
+          <stop offset="1" stop-color="#240145"/>
+        </linearGradient>
+        <linearGradient id="mt2_paint" x1="1045" y1="10" x2="1045" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C73194"/>
+          <stop offset="1" stop-color="#C73194" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="mt3_paint" x1="359" y1="-178.891" x2="359" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8D087D"/>
+          <stop offset="1" stop-color="#26004A"/>
+        </linearGradient>
+        <linearGradient id="mt4_paint" x1="359" y1="1" x2="359" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C73194"/>
+          <stop offset="1" stop-color="#C73194" stop-opacity="0"/>
         </linearGradient>
       </defs>
     </svg>
+      
 
-    <svg
-      class="z-20 mountain absolute 2xl:hidden"
-      viewBox="0 0 1440 866"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M42.3621 121.464C27.8621 119.928 21.5288 92 0.528834 84.5C-20.4712 77 7.62939e-06 866 7.62939e-06 866H1440V115.5C1351.15 113.399 1372.03 105 1288.53 82C1288.53 82 1205.86 42.3689 1200.03 40.5C1194.2 38.6311 1088.36 26.4979 1088.36 26.4979L1043.36 10.5L994.362 67.0032L913.862 73.1842L870.862 70.0666L843.362 84.2009L812.362 106.517L776.862 115.337L756.362 97.6374L651.529 73.1842L611.529 40.5C559.269 22.0885 556.927 27.3368 513.529 0L451.529 33L435.029 58.5L389.529 78L344.529 121.464L315.029 116.018L279.529 134L241.029 116.018L202.529 104.5L145.529 137.5L106.362 116.018L79.8621 110.471C79.8621 110.471 56.8621 123 42.3621 121.464Z"
-        fill="#240145"
-      />
-    </svg>
-
-    <svg
-      class="z-20 absolute bottom-0 w-full hidden 2xl:block"
-      viewBox="0 0 1440 247"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M46 54L0 88V247H1440V73.5L1404.96 62.6673L1353.91 73.507L1289.34 55.5537L1211.26 33.5355L1148.19 67.4097L1053.6 73.507L980.019 46.7464L926.963 33.5355L878.913 55.5537L829.362 33.5355C806.728 37.0858 794.317 39.8974 772.803 46.7464L725.754 21.6795L667.193 16.2596L619.143 55.5537L556.578 78.2494L506.526 62.6673C476.654 48.2929 413.978 22.6044 412.785 24.5357C404.262 38.333 359.451 76.7402 348.861 78.2494L262.772 46.7464L199.456 0.547691C199.032 0.238923 198.456 0.294171 198.115 0.692582C179.655 22.3175 139.164 63.9166 120.123 62.6673L46 54Z"
-        fill="url(#paint5_linear)"
-      />
+    <svg class="mountain z-30 absolute w-full block 2xl:hidden" viewBox="0 0 1439 1020" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="375" width="1440" height="642" fill="#240145"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M965.871 194L888.13 141.121L902.897 188.841L927.218 210.766L942.853 255.477L991.929 306.206L1153.92 378H1441V306.206L1396.27 270.093L1383.24 230.542L1351.97 194L1370.64 169.925L1153.92 10L1209.52 121.346L1181.29 183.682L1209.52 261.495L1113.97 270.093L1079.22 230.542L965.871 194Z" fill="url(#r_mt1_paint)"/>
+      <path d="M888.13 141.121L836.448 210.766L770.868 255.477L722.226 314.374L651 378H1153.92L991.929 306.206L942.853 255.477L927.218 210.766L902.897 188.841L888.13 141.121Z" fill="url(#r_mt1_paint)"/>
+      <path d="M1153.92 10L965.871 194L1079.22 230.542L1113.97 270.093L1209.52 261.495L1181.29 183.682L1209.52 121.346L1153.92 10Z" fill="url(#r_mt1_paint)"/>
+      <path d="M1441 107.589L1370.64 169.925L1351.97 194L1383.24 230.542L1396.27 270.093L1441 306.206V107.589Z" fill="url(#r_mt1_paint)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M965.871 194L888.13 141.121L902.897 188.841L927.218 210.766L942.853 255.477L991.929 306.206L1153.92 378H1441V306.206L1396.27 270.093L1383.24 230.542L1351.97 194L1370.64 169.925L1153.92 10L1209.52 121.346L1181.29 183.682L1209.52 261.495L1113.97 270.093L1079.22 230.542L965.871 194Z" fill="#240145"/>
+      <path d="M888.13 141.121L965.871 194M888.13 141.121L836.448 210.766L770.868 255.477L722.226 314.374L651 378H1153.92M888.13 141.121L902.897 188.841L927.218 210.766L942.853 255.477L991.929 306.206L1153.92 378M965.871 194L1153.92 10M965.871 194L1079.22 230.542L1113.97 270.093L1209.52 261.495L1181.29 183.682L1209.52 121.346L1153.92 10M1153.92 10L1370.64 169.925M1370.64 169.925L1441 107.589V306.206M1370.64 169.925L1351.97 194L1383.24 230.542L1396.27 270.093L1441 306.206M1153.92 378H1441V306.206" stroke="url(#r_mt2_paint)"/>
+      <path d="M1 196.251L146.567 1L319.674 168.729L494.256 75.2576L719 378H2.47534L1 196.251Z" fill="url(#r_mt3_paint)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 196.251V103.818L146.567 1L117.552 113.685L168.697 141.207L186.893 205.079L222.793 196.251L319.674 168.729L494.256 75.2576L453.438 173.402L518.353 253.891V304.262L719 378H1V196.251Z" fill="#240145"/>
+      <path d="M146.567 1L319.674 168.729M146.567 1L117.552 113.685L168.697 141.207L186.893 205.079L222.793 196.251L319.674 168.729M146.567 1L1 103.818V196.251V378H719M319.674 168.729L494.256 75.2576M494.256 75.2576L719 378M494.256 75.2576L453.438 173.402L518.353 253.891V304.262L719 378" stroke="url(#r_mt4_paint)"/>
       <defs>
-        <linearGradient
-          id="paint5_linear"
-          x1="722"
-          y1="4.11319e-08"
-          x2="721.865"
-          y2="343.999"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3A0366" />
-          <stop offset="1" stop-color="#400141" />
+        <linearGradient id="r_mt1_paint" x1="1045" y1="-113.383" x2="1045" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8D087D"/>
+          <stop offset="1" stop-color="#240145"/>
+        </linearGradient>
+        <linearGradient id="r_mt2_paint" x1="1045" y1="10" x2="1045" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C73194"/>
+          <stop offset="1" stop-color="#C73194" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="r_mt3_paint" x1="359" y1="-178.891" x2="359" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8D087D"/>
+          <stop offset="1" stop-color="#26004A"/>
+        </linearGradient>
+        <linearGradient id="r_mt4_paint" x1="359" y1="1" x2="359" y2="378" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C73194"/>
+          <stop offset="1" stop-color="#C73194" stop-opacity="0"/>
         </linearGradient>
       </defs>
     </svg>
-
-    <svg
-      class="z-30 absolute bottom-0 w-full hidden 2xl:block"
-      viewBox="0 0 1440 247"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M43.3333 121.464C28.8333 119.928 22.5 92 1.50005 84.5C-19.5 77 0 247 0 247H1440V115.5C1351.15 113.399 1373 105 1289.5 82C1289.5 82 1206.83 42.3689 1201 40.5C1195.17 38.6311 1089.33 26.4979 1089.33 26.4979L1044.33 10.5L995.333 67.0032L914.833 73.1842L871.833 70.0666L844.333 84.2009L813.333 106.517L777.833 115.337L757.333 97.6374L652.5 73.1842L612.5 40.5C560.24 22.0885 557.898 27.3368 514.5 0L452.5 33L436 58.5L390.5 78L345.5 121.464L316 116.018L280.5 134L242 116.018L203.5 104.5L146.5 137.5L107.333 116.018L80.8333 110.471C80.8333 110.471 57.8333 123 43.3333 121.464Z"
-        fill="#240145"
-      />
-    </svg>
-
+      
+      
+      
     <div class="h-full w-full flex flex-col items-center justify-center">
       <h1 class="z-30 main-title font-streamster">Tom Délié</h1>
       <span
@@ -226,7 +216,7 @@
 
   	/* MOUNTAINS RESPONSIVE */
 	.mountain {
-		bottom: 0rem;
+		bottom: -2rem;
 	}
 
 	@media (min-width: 380px) {
@@ -316,6 +306,11 @@
 			top: -29rem;
 			display: block;
 		}
+
+    #sun {
+      width: 38rem;
+      height: 38rem;
+    }
 	}
 
 	@media (min-width: 1100px) {
@@ -366,5 +361,6 @@
 		.hair {
 			top: 0rem;
 		}
+
 	}
 </style>

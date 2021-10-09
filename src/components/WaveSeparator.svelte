@@ -4,8 +4,8 @@
 </script>
 
 <svg
-	class="absolute z-20 transform rotate-180 -mt-2"
-  style="color: {top}; background-color: {bottom}"
+	class="absolute z-40 transform rotate-180"
+  style="color: {top}; background-color: {bottom}; margin-top: -2.6px;"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 1440 100"

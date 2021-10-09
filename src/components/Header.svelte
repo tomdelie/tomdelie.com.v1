@@ -37,7 +37,7 @@
 </script>
 
 <svelte:window on:scroll={handleScroll}/>
-<header class="{scrolled ? 'translate-y-0' : '-translate-y-12' } backdrop-filter shadow-sm backdrop-blur transform z-40 fixed w-full transition duration-700" style="background-color: rgba(58, 50, 114, 0.5);">
+<header class="{scrolled ? 'translate-y-0' : '-translate-y-12' } backdrop-filter shadow-sm backdrop-blur transform fixed w-full transition duration-700" style="z-index: 1000; background-color: rgba(58, 50, 114, 0.5);">
 	<div class="glass px-6 h-12 flex items-center justify-between">
 		<a href="#home"><div class="sun w-6 h-6 rounded-full cursor-pointer hover:shadow"></div></a>
 		<nav class="h-full flex items-center">
