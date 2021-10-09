@@ -1,7 +1,6 @@
 <script lang="ts">
-	import TranslationEN from '../translations/fr';
+	import { _ } from 'svelte-i18n';
 
-	const translation = TranslationEN;
 	export let name: string;
 	export let src: string;
 	export let description: string = '';
@@ -15,7 +14,7 @@
 
 		<div class="absolute top-0 w-full h-full flex justify-center items-center">
 			<span class="sun shadow-lg z-30 bg-purple-900 rounded-full w-28 p-10 h-28 flex items-center justify-center text-center uppercase font-semibold font-kiona text-white">
-				{translation.projects_viewproject}
+				{$_('projects_viewproject')}
 			</span>
 		</div>
 	</div>

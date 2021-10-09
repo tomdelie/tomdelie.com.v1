@@ -1,7 +1,6 @@
 <script lang="ts">
-	import TranslationEN from '../translations/fr';
+	import { _, json } from 'svelte-i18n';
 	import Home from '../components/Home/index.svelte';
-	const translation = TranslationEN;
 
 	import Skill from '../components/Skill.svelte';
 	import Project from '../components/Project.svelte';
@@ -15,43 +14,43 @@
 	<section id="about" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 pt-20 md:pt-56 relative">
 		<h2>
 			<span class="font-semibold font-kiona mr-2 shadow-pink">01.</span>
-			<span class="font-kiona font-semibold text-white text-opacity-90">{translation.about_title}</span>
+			<span class="font-kiona font-semibold text-white text-opacity-90">{$_('about_title')}</span>
 		</h2>
-		<p class="text-white text-opacity-80 my-6">{translation.about_paragraph}</p>
+		<p class="text-white text-opacity-80 my-6">{$_('about_paragraph')}</p>
 	</section>
 
 	<section id="projects" class="z-20 container mx-auto px-4 lg:px-0 lg:w-3/5 pt-20 md:pt-28">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 shadow-pink">02.</span><span
-				class="font-kiona font-semibold text-white text-opacity-90">{translation.projects_title}</span
+				class="font-kiona font-semibold text-white text-opacity-90">{$_('projects_title')}</span
 			>
 		</h2>
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
 			<Project
 				name="Symfonax"
 				src="/images/mockup.png"
-				description={translation.projects_symfonax_description}
-				tags={translation.projects_symfonax_tags}
+				description={$_('projects_symfonax_description')}
+				tags={$json('projects_symfonax_tags')}
 			/>
 			<Project
 				name="E-Furrax"
 				src="/images/efurrax-5.png"
-				description={translation.projects_efurrax_description}
-				tags={translation.projects_efurrax_tags}
+				description={$_('projects_efurrax_description')}
+				tags={$json('projects_efurrax_tags')}
 				github="https://github.com/e-furrax"
 			/>
 			<Project 
 				name="Developer Skill Tree" 
 				src="/images/dev-skill-tree.png"
-				description={translation.projects_dst_description}
-				tags={translation.projects_dst_tags}
+				description={$_('projects_dst_description')}
+				tags={$json('projects_dst_tags')}
 				github="https://github.com/tomdelie/developer-skill-tree"
 			/>
 			<Project 
 				name="Pixel World" 
 				src="/images/pixel-world.png"
-				description={translation.projects_pixelworld_description}
-				tags={translation.projects_pixelworld_tags}
+				description={$_('projects_pixelworld_description')}
+				tags={$json('projects_pixelworld_tags')}
 				github="https://github.com/godot-pour-les-nuls/pixel-world"
 			/>
 		</div>
@@ -60,7 +59,7 @@
 	<section id="skills" class="z-20 container lg:w-3/5 mx-auto px-4 lg:px-0 pt-20 md:pt-28 relative">
 		<h2 class="mb-6">
 			<span class="font-semibold font-kiona mr-2 shadow-pink">03.</span><span
-				class="font-kiona font-semibold text-white text-opacity-90">{translation.skills_title}</span
+				class="font-kiona font-semibold text-white text-opacity-90">{$_('skills_title')}</span
 			>
 		</h2>
 
@@ -119,7 +118,7 @@
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">{translation.skills_title_automation}</h3>
+				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">{$_('skills_title_automation')}</h3>
 				<Skill
 					moreClass="border-b"
 					src="/images/icons/automation/docker.svg"
@@ -148,7 +147,7 @@
 			</div>
 
 			<div>
-				<h3 class="text-xs text-white font-semibold mb-2 text-opacity-80">{translation.skills_title_others}</h3>
+				<h3 class="text-xs text-white font-semibold mb-2 text-opacity-80">{$_('skills_title_others')}</h3>
 				<Skill moreClass="border-b" src="/images/icons/git.svg" name="Git" level={3} />
 				<Skill moreClass="border-b" src="/images/icons/figma.svg" name="Figma" level={2} />
 				<Skill
@@ -166,18 +165,18 @@
 		<div class="flex flex-col items-center justify-center">
 			<h2>
 				<span class="font-semibold font-kiona mr-2 shadow-pink">04.</span><span
-					class="font-kiona font-semibold text-white opacity-90">{translation.contact_title}</span
+					class="font-kiona font-semibold text-white opacity-90">{$_('contact_title')}</span
 				>
 			</h2>
 			<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
-				{translation.contact_headline}
+				{$_('contact_headline')}
 			</h3>
 			<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
-				{translation.contact_paragraph}
+				{$_('contact_paragraph')}
 			</p>
 			<button
 				class="contact-button overflow-hidden z-10 hover:shadow-xl transform hover:-translate-y-1 relative mt-6 text-sm rounded-sm px-6 py-3 text-white font-bold transition duration-700"
-				>{translation.contact_button}</button
+				>{$_('contact_button')}</button
 			>
 		</div>
 	</section>

@@ -1,6 +1,5 @@
 <script lang="ts">
-  import TranslationEN from '../translations/fr';
-  const translation = TranslationEN;
+  import { _ } from 'svelte-i18n';
 
   export let level: number = 1;
   export let name: string = '?';
@@ -16,9 +15,9 @@
     <img class="{favorite ? '' : 'hidden'} cursor-help ml-2" src="/images/icons/favorite.svg" width="14" title="Favorite technology" alt="Favorite" />
   </div>
   <div class="h-1 flex items-center ml-4">
-    <div class="{level >= 1 ? 'bg-pinky' : 'border border-white opacity-80'} w-6 h-full rounded-full cursor-help" title={translation.beginner}></div>
-    <div class="{level >= 2 ? 'bg-pinky' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title={translation.intermediate}></div>
-    <div class="{level >= 3 ? 'bg-pinky' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title={translation.advanced}></div>
+    <div class="{level >= 1 ? 'bg-pinky' : 'border border-white opacity-80'} w-6 h-full rounded-full cursor-help" title={$_('skills_beginner')}></div>
+    <div class="{level >= 2 ? 'bg-pinky' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title={$_('skills_intermediate')}></div>
+    <div class="{level >= 3 ? 'bg-pinky' : 'border border-white opacity-80'} w-6 h-full rounded-full ml-1 cursor-help" title={$_('skills_advanced')}></div>
   </div>
 </div>
 

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Translation from '../../translations/fr';
+  import { _ } from 'svelte-i18n';
+
   import NightSky from './NightSky.svelte';
   import WaveSeparator from '../WaveSeparator.svelte';
-	const translation = Translation;
 </script>
 
 <svg shape-rendering="geometricPrecision" class="hidden hair z-10 w-full absolute left-0 opacity-80" width="1440" height="2996" viewBox="0 0 1440 2996" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,7 +188,7 @@
       <h1 class="z-30 main-title font-streamster">Tom Délié</h1>
       <span
         class="z-30 main-subtitle uppercase font-kiona font-bold text-black text-sm bg-white -m-2 px-3"
-        >{translation.subtitle}</span
+        >{$_('subtitle')}</span
       >
     </div>
   </div>

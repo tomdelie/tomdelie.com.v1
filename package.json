@@ -33,5 +33,9 @@
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^2.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "svelte-i18n": "^3.3.12",
+    "vue-i18n": "^9.1.9"
+  }
 }

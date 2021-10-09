@@ -1,13 +1,11 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import Links from './Links.svelte';
-	import TranslationEN from '../translations/fr';
-
-	const translation = TranslationEN;
 </script>
 
 <footer class="flex flex-col items-center justify-center mt-20 pb-6 pt-20 relative">
 	<span class="text-white opacity-90 italic pt-4 tracking-widest text-xs mb-2"
-		>{translation.footer_credits} <span class="font-semibold">Tom Délié</span></span
+		>{$_('footer_credits')} <span class="font-semibold">Tom Délié</span></span
 	>
 	<Links />
 	<svg style="z-index: -1" class="absolute bottom-0 w-full transform rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1685.86 387.16">
