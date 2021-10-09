@@ -1,7 +1,7 @@
 const ghpages = require('gh-pages');
 
 ghpages.publish(
-	'static',
+	'build',
 	{
 		branch: 'gh-pages',
 		repo: 'https://github.com/tomdelie/tomdelie.com.git'
