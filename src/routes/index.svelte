@@ -178,10 +178,7 @@
 			<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
 				{$_('contact_paragraph')}
 			</p>
-			<button
-				class="contact-button overflow-hidden z-10 hover:shadow-xl transform hover:-translate-y-1 relative mt-6 text-sm rounded-sm px-6 py-3 text-white font-bold transition duration-700"
-				>{$_('contact_button')}</button
-			>
+			<a class="contact-button overflow-hidden z-10 hover:shadow-xl transform hover:-translate-y-1 relative mt-6 text-sm rounded-sm px-6 py-3 text-white font-bold transition duration-700" href="mailto:tomdelie78@gmail.com" rel="noopener noreferrer" target="_blank">{$_('contact_button')}</a>
 		</div>
 	</section>
 </main>
