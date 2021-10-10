@@ -26,18 +26,19 @@
 			>
 		</h2>
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-			<Project
+			<!-- <Project
 				name="Symfonax"
 				src="/images/mockup.png"
 				description={$_('projects_symfonax_description')}
 				tags={$json('projects_symfonax_tags')}
-			/>
+			/> -->
 			<Project
 				name="E-Furrax"
 				src="/images/efurrax-5.png"
 				description={$_('projects_efurrax_description')}
 				tags={$json('projects_efurrax_tags')}
 				github="https://github.com/e-furrax"
+				website="https://e-furrax.com/"
 			/>
 			<Project 
 				name="Developer Skill Tree" 
@@ -45,6 +46,7 @@
 				description={$_('projects_dst_description')}
 				tags={$json('projects_dst_tags')}
 				github="https://github.com/tomdelie/developer-skill-tree"
+				website="https://skills.tomdelie.com/"
 			/>
 			<Project 
 				name="Pixel World" 
@@ -52,6 +54,7 @@
 				description={$_('projects_pixelworld_description')}
 				tags={$json('projects_pixelworld_tags')}
 				github="https://github.com/godot-pour-les-nuls/pixel-world"
+				website="https://tomdelie.itch.io/pixel-world"
 			/>
 		</div>
 	</section>
@@ -113,7 +116,7 @@
 			<div>
 				<h3 class="text-xs text-white font-semibold text-opacity-80 mb-2">PHP</h3>
 				<Skill moreClass="border-b" src="/images/icons/php/php.svg" name="PHP 7" level={2} />
-				<Skill moreClass="border-b" src="/images/icons/php/laravel.svg" name="Laravel" level={2} />
+				<Skill moreClass="border-b" src="/images/icons/php/laravel.svg" name="Laravel" level={2} favorite={true} />
 				<Skill src="/images/icons/php/symfony.svg" name="Symfony" level={2} />
 			</div>
 
@@ -124,6 +127,7 @@
 					src="/images/icons/automation/docker.svg"
 					name="Docker"
 					level={3}
+					favorite={true}
 				/>
 				<Skill
 					moreClass="border-b"

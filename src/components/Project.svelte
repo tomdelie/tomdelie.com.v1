@@ -3,13 +3,14 @@
 
 	export let name: string;
 	export let src: string;
+	export let website: string;
 	export let description: string = '';
 	export let tags: string[] = [];
 	export let github: string = '';
 </script>
 
 <div class="project-preview z-20 border shadow-lg hover:shadow-xl transform hover:-translate-y-2 rounded-sm transition duration-700 bg-graypurple-900" style="background-color: #1E1A3C;">
-	<div class="cover-image cursor-pointer overflow-hidden relative rounded-t-sm">
+	<a href={website} target="_blank" class="cover-image block cursor-pointer overflow-hidden relative rounded-t-sm">
 		<img class="project-background transition duration-200 opacity-70" {src} alt="Project 1" />
 
 		<div class="absolute top-0 w-full h-full flex justify-center items-center">
@@ -17,7 +18,7 @@
 				{$_('projects_viewproject')}
 			</span>
 		</div>
-	</div>
+	</a>
 
 	<div class="relative p-4 text-xs text-white border-t" >
 		<div class="flex items-center justify-between">

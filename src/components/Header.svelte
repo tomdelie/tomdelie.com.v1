@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<nav class="h-full flex items-center">
-			<ol class="hidden md:flex items-center mr-10 text-xs text-white text-opacity-90 h-full">
+			<ol class="hidden md:flex items-center text-xs text-white text-opacity-90 h-full">
 				<a href="#about" class="mr-6"><li>{$_('about_title')}</li></a>
 				<a href="#projects" class="mr-6"><li>{$_('projects_title')}</li></a>
 				<a href="#skills" class="mr-6"><li>{$_('skills_title')}</li></a>
