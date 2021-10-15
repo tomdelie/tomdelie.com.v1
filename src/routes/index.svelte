@@ -172,7 +172,7 @@
 					class="font-kiona font-semibold text-white opacity-90">{$_('contact_title')}</span
 				>
 			</h2>
-			<h3 class="text-white opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
+			<h3 class="text-white text-center opacity-80 text-4xl md:text-5xl font-kiona font-semibold my-6">
 				{$_('contact_headline')}
 			</h3>
 			<p class="text-sm text-white opacity-80 text-center" style="max-width: 450px;">
