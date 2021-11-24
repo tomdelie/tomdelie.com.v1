@@ -1,11 +1,16 @@
 <script lang="ts">
-	import { _, json } from 'svelte-i18n';
+	import { onMount } from 'svelte';
+	import { _, json, locale } from 'svelte-i18n';
 	import Home from '../components/Home/index.svelte';
 
 	import Skill from '../components/Skill.svelte';
 	import Project from '../components/Project.svelte';
 	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
+
+	onMount(() => {
+		$locale = localStorage.getItem('locale') || 'en';
+	});
 </script>
 
 <Header />
@@ -26,19 +31,13 @@
 			>
 		</h2>
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-			<!-- <Project
-				name="Symfonax"
-				src="/images/mockup.png"
-				description={$_('projects_symfonax_description')}
-				tags={$json('projects_symfonax_tags')}
-			/> -->
-			<Project
-				name="E-Furrax"
-				src="/images/efurrax-5.png"
-				description={$_('projects_efurrax_description')}
-				tags={$json('projects_efurrax_tags')}
-				github="https://github.com/e-furrax"
-				website="https://e-furrax.com/"
+			<Project 
+				name="Pixel World" 
+				src="/images/pixel-world.png"
+				description={$_('projects_pixelworld_description')}
+				tags={$json('projects_pixelworld_tags')}
+				github="https://github.com/godot-pour-les-nuls/pixel-world"
+				website="https://tomdelie.itch.io/pixel-world"
 			/>
 			<Project 
 				name="Developer Skill Tree" 
@@ -48,13 +47,22 @@
 				github="https://github.com/tomdelie/developer-skill-tree"
 				website="https://skills.tomdelie.com/"
 			/>
-			<Project 
-				name="Pixel World" 
-				src="/images/pixel-world.png"
-				description={$_('projects_pixelworld_description')}
-				tags={$json('projects_pixelworld_tags')}
-				github="https://github.com/godot-pour-les-nuls/pixel-world"
-				website="https://tomdelie.itch.io/pixel-world"
+			<Project
+				name="Lifetime"
+				src="/images/lifetime.png"
+				description={$_('projects_lifetime_description')}
+				tags={$json('projects_lifetime_tags')}
+				github="https://github.com/lifetime"
+				website="https://lifetime.tomdelie.com/"
+			/>
+			<Project
+				hosted={false}
+				name="E-Furrax"
+				src="/images/efurrax-5.png"
+				description={$_('projects_efurrax_description')}
+				tags={$json('projects_efurrax_tags')}
+				github="https://github.com/e-furrax"
+				website="https://e-furrax.com/"
 			/>
 		</div>
 	</section>

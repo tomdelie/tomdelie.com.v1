@@ -3,6 +3,7 @@
   "about_title": "About me",
   "about_paragraph": "Hey, I'm Tom Délié a 23 years old french full-stack developer that recently graduated in software engineering. I worked as an internship student during 3 years, mainly as a Node.js back-end developer. I'm currently working as a freelance developer.",
   "projects_title": "Projects",
+  "projects_not_hosted": "(not hosted)",
   "projects_symfonax_description": "School project. A web app that let you watch youtube videos with your friends.",
   "projects_symfonax_tags": [
     "PHP",
@@ -30,6 +31,13 @@
   "projects_pixelworld_description": "School project. 2D platformer game made with Godot Engine.",
   "projects_pixelworld_tags": [
     "Godot Engine"
+  ],
+  "projects_lifetime_description": "A 90-year life, one dot equals one month. Hosted on the Internet Computer.",
+  "projects_lifetime_tags": [
+    "JavaScript",
+    "Web3",
+    "Dfinity",
+    "Fleek"
   ],
   "projects_viewproject": "View project",
   "skills_title": "Skills",

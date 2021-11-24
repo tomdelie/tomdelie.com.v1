@@ -1,11 +1,11 @@
 import { init, addMessages } from 'svelte-i18n';
 import fr from './fr.json';
-import en from './en-US.json';
+import en from './en.json';
 
-addMessages('en-US', en);
+addMessages('en', en);
 addMessages('fr', fr);
 
 init({
-  fallbackLocale: 'en-US',
-  initialLocale: 'en-US'
+  fallbackLocale: 'en',
+  initialLocale: 'en'
 });

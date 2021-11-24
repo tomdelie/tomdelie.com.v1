@@ -36,6 +36,7 @@
 	const handleLocaleChange = (event) => {
 		const lang = event.target.dataset.lang;
 		$locale = lang;
+		localStorage.setItem('locale', lang);
 	}
 </script>
 
@@ -45,9 +46,9 @@
 		<div class=" flex items-center">
 			<a href="#home"><div class="sun w-6 h-6 rounded-full cursor-pointer hover:shadow"></div></a>
 			<div class="flex items-center text-white text-sm ml-4">
-				<span class="{ $locale === 'en-US' ? 'font-bold' : '' } cursor-pointer" on:click={handleLocaleChange} data-lang="en-US">en</span>
+				<span class="{ $locale === 'en' ? 'font-bold' : '' } cursor-pointer" on:click={handleLocaleChange} data-lang="en">en</span>
 				<span class="mx-2">|</span>
-				<span class="{ $locale !== 'en-US' ? 'font-bold' : '' } cursor-pointer" on:click={handleLocaleChange} data-lang="fr">fr</span>
+				<span class="{ $locale !== 'en' ? 'font-bold' : '' } cursor-pointer" on:click={handleLocaleChange} data-lang="fr">fr</span>
 			</div>
 		</div>
 		<nav class="h-full flex items-center">

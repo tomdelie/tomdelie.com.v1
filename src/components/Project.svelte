@@ -7,10 +7,11 @@
 	export let description: string = '';
 	export let tags: string[] = [];
 	export let github: string = '';
+	export let hosted: boolean = true;
 </script>
 
 <div class="project-preview z-20 border shadow-lg hover:shadow-xl transform hover:-translate-y-2 rounded-sm transition duration-700 bg-graypurple-900" style="background-color: #1E1A3C;">
-	<a href={website} target="_blank" class="cover-image block cursor-pointer overflow-hidden relative rounded-t-sm">
+	<a href={website} target="_blank" class="{hosted ? '' : 'pointer-events-none'} cover-image block cursor-pointer overflow-hidden relative rounded-t-sm">
 		<img class="project-background transition duration-200 opacity-70" {src} alt="Project 1" />
 
 		<div class="absolute top-0 w-full h-full flex justify-center items-center">
@@ -22,7 +23,7 @@
 
 	<div class="relative p-4 text-xs text-white border-t" >
 		<div class="flex items-center justify-between">
-			<h3 class="font-bold text-white text-opacity-90">{name}</h3>
+			<h3 class="font-bold text-white text-opacity-90">{name} {hosted ? '' : $_('projects_not_hosted')}</h3>
 			
 			{#if github !== ''}
 				<a href={github} class="github z-20 absolute top-4 right-4 transition duration-200">

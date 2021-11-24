@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
+	import Flamingo from './Flamingo.svelte';
 	import Links from './Links.svelte';
 </script>
 
 <footer class="flex flex-col items-center justify-center mt-20 pb-6 pt-20 relative">
+	<Flamingo moreClass="hidden sm:block absolute bottom-0 left-10" rotate={true} />
+	<Flamingo moreClass="hidden sm:block absolute bottom-0 right-10" />
 	<span class="text-white opacity-90 italic pt-4 tracking-widest text-xs mb-2"
 		>{$_('footer_credits')} <span class="font-semibold">Tom Délié</span></span
 	>

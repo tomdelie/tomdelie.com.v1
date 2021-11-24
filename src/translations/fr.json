@@ -3,6 +3,7 @@
   "about_title": "À propos de moi",
   "about_paragraph": "Hey, je suis Tom Délié, développeur full-stack de 23 ans récemment diplômé en génie informatique. J'ai travaillé en alternance pendant 3 ans, principalement en tant que développeur back-end Node.js. Je suis actuellement freelance.",
   "projects_title": "Projets",
+  "projects_not_hosted": "(non hébergé)",
   "projects_symfonax_description": "Projet d'école. Une application web permettant de regarder des vidéos YouTube synchronisées avec ses potes.",
   "projects_symfonax_tags": [
     "PHP",
