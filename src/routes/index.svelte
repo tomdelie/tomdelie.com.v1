@@ -52,7 +52,7 @@
 				src="/images/lifetime.png"
 				description={$_('projects_lifetime_description')}
 				tags={$json('projects_lifetime_tags')}
-				github="https://github.com/lifetime"
+				github="https://github.com/tomdelie/lifetime"
 				website="https://lifetime.tomdelie.com/"
 			/>
 			<Project
