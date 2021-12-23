@@ -1,5 +1,4 @@
 User-agent: *
-Allow: /$
-Disallow: /
+Allow: /
 Sitemap: https://tomdelie.com/sitemap.xml
 Host: https://tomdelie.com
